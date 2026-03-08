@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🐼 团团熊猫 · 医学全科 · 文凭证书 · 宇宙终极档案 · 马来西亚</title>
+  <title>🐼 团团熊猫 · 职业选手 · 性格分析 · 完整文凭 · 宇宙终极档案</title>
   <!-- 使用轻量级 Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <style>
@@ -408,6 +408,64 @@
       gap: 20px;
     }
 
+    /* 职业选手卡片 */
+    .pro-card {
+      background: rgba(255,215,0,0.1);
+      border: 2px solid #ffaa33;
+      border-radius: 25px;
+      padding: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .pro-card i {
+      font-size: 3rem;
+      color: #ffaa33;
+    }
+
+    .pro-info h3 {
+      color: #ffdb8e;
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+
+    .pro-info p {
+      color: #ccc;
+    }
+
+    /* 性格特质卡片 */
+    .trait-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .trait-item {
+      background: rgba(20, 20, 40, 0.8);
+      border-radius: 20px;
+      padding: 15px;
+      text-align: center;
+      border: 1px solid #ffaa33;
+    }
+
+    .trait-item i {
+      font-size: 2rem;
+      color: #ffaa33;
+      margin-bottom: 8px;
+    }
+
+    .trait-item h4 {
+      color: #ffdb8e;
+      margin-bottom: 5px;
+    }
+
+    .trait-item p {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
     /* 页脚 */
     .space-footer {
       text-align: center;
@@ -424,6 +482,7 @@
       .game-cosmos { grid-template-columns: 1fr; }
       .achievement-matrix { grid-template-columns: repeat(2, 1fr); }
       .certificate-grid { grid-template-columns: 1fr; }
+      .trait-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -439,7 +498,7 @@
         </div>
         <h1 class="name-title">🐼 团团熊猫 🇲🇾</h1>
         <div class="identity-badge">
-          <i class="fas fa-crown"></i> 20岁 · 马来西亚 · 医学全科 · 无限领域 · 30+文凭
+          <i class="fas fa-crown"></i> 20岁 · 马来西亚 · 医学全科 · 无限领域 · 职业选手 · 50+文凭
         </div>
       </div>
 
@@ -524,11 +583,11 @@
         <span>身高182cm · 体重72kg · 血型O · 视力1.5 · 鞋码44</span>
       </div>
 
-      <!-- 文凭/证书专区 (新增) -->
+      <!-- 文凭/证书专区 (50+项) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('certificateFold')">
           <i class="fas fa-certificate"></i>
-          <span>🎓 文凭/证书 · 30+项 · 点击展开</span>
+          <span>🎓 文凭/证书 · 50+项 · 点击展开</span>
           <i class="fas fa-chevron-down"></i>
         </div>
         <div id="certificateFold" class="fold-content">
@@ -673,6 +732,105 @@
                 <p>马来西亚游泳协会 · 2024</p>
               </div>
             </div>
+            <div class="certificate-item">
+              <i class="fas fa-hiking"></i>
+              <div class="certificate-info">
+                <h4>登山领队证</h4>
+                <p>马来西亚登山协会 · 2025</p>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <i class="fas fa-water"></i>
+              <div class="certificate-info">
+                <h4>潜水员OW</h4>
+                <p>PADI · 2025</p>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <i class="fas fa-crown"></i>
+              <div class="certificate-info">
+                <h4>电竞选手认证</h4>
+                <p>马来西亚电竞协会 · 2025</p>
+              </div>
+            </div>
+            <div class="certificate-item">
+              <i class="fas fa-chess-queen"></i>
+              <div class="certificate-info">
+                <h4>Valorant 职业选手</h4>
+                <p>MY Esports · 2025</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 职业选手专区 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('proFold')">
+          <i class="fas fa-crown"></i>
+          <span>🏆 职业选手 · 电竞生涯 · 点击展开</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="proFold" class="fold-content">
+          <div class="pro-card">
+            <i class="fas fa-crosshairs"></i>
+            <div class="pro-info">
+              <h3>Valorant 职业选手</h3>
+              <p>战队: MY Pandas · 位置: 决斗者/烟位 · 最高段位: 钻石2 · 2025年加入</p>
+            </div>
+          </div>
+          <div class="pro-card">
+            <i class="fas fa-robot"></i>
+            <div class="pro-info">
+              <h3>Roblox 职业开发者</h3>
+              <p>游戏: 熊猫乐园 · 玩家: 50万+ · 认证开发者 · 2024年认证</p>
+            </div>
+          </div>
+          <div class="pro-card">
+            <i class="fas fa-chess-board"></i>
+            <div class="pro-info">
+              <h3>炉石传说 职业选手</h3>
+              <p>战队: MY Pandas · 天梯: 传说前500 · 比赛: 2024冬季赛8强</p>
+            </div>
+          </div>
+          <div class="pro-card">
+            <i class="fas fa-futbol"></i>
+            <div class="pro-info">
+              <h3>FIFA 职业选手</h3>
+              <p>战队: MY Pandas · 排名: 马来西亚前100 · 2025年加入</p>
+            </div>
+          </div>
+          <div class="pro-card">
+            <i class="fas fa-chess"></i>
+            <div class="pro-info">
+              <h3>围棋职业选手</h3>
+              <p>段位: 业余1段 · 比赛: 2024全国赛16强</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 性格特质 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('personalityFold')">
+          <i class="fas fa-smile"></i>
+          <span>🧠 性格特质 · MBTI/九型/大五 · 点击展开</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="personalityFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">🧠 MBTI: INFJ (提倡者)</span>
+            <span class="cluster-item">🔢 九型人格: 4w5 (浪漫主义者)</span>
+            <span class="cluster-item">📊 大五人格: RCOAN</span>
+            <span class="cluster-item">💭 16PF: 情感丰富/敏感</span>
+            <span class="cluster-item">🎭 DISC: I型 (影响型)</span>
+            <span class="cluster-item">🌟 核心价值观: 真诚/创造/成长</span>
+            <span class="cluster-item">💪 优点: 创意/同理心/学习力</span>
+            <span class="cluster-item">🤔 缺点: 完美主义/过度思考</span>
+            <span class="cluster-item">❤️ 爱情观: 灵魂伴侣/深度连接</span>
+            <span class="cluster-item">👥 社交风格: 倾听者/引导者</span>
+            <span class="cluster-item">🎯 动机: 自我实现/帮助他人</span>
+            <span class="cluster-item">🌈 情绪特质: 敏感/热情/稳定</span>
           </div>
         </div>
       </div>
@@ -874,26 +1032,140 @@
     <!-- ========== 右侧主宇宙：无限内容 ========== -->
     <div class="right-main">
       
+      <!-- 职业选手专区 - 右侧大展示 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-crown"></i> 🏆 职业选手 · 电竞生涯 · 5项专业
+        </div>
+        
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+          <div class="pro-card" style="margin:0;">
+            <i class="fas fa-crosshairs"></i>
+            <div class="pro-info">
+              <h3>Valorant 职业选手</h3>
+              <p>战队: MY Pandas · 位置: 决斗者/烟位 · 最高段位: 钻石2 · 2025年加入 · 比赛: 2025春季赛16强</p>
+            </div>
+          </div>
+          <div class="pro-card" style="margin:0;">
+            <i class="fas fa-robot"></i>
+            <div class="pro-info">
+              <h3>Roblox 职业开发者</h3>
+              <p>游戏: 熊猫乐园 · 玩家: 50万+ · 认证开发者 · 2024年认证 · 收入: $5000+</p>
+            </div>
+          </div>
+          <div class="pro-card" style="margin:0;">
+            <i class="fas fa-chess-board"></i>
+            <div class="pro-info">
+              <h3>炉石传说 职业选手</h3>
+              <p>战队: MY Pandas · 天梯: 传说前500 · 比赛: 2024冬季赛8强 · 奖金: RM2000</p>
+            </div>
+          </div>
+          <div class="pro-card" style="margin:0;">
+            <i class="fas fa-futbol"></i>
+            <div class="pro-info">
+              <h3>FIFA 职业选手</h3>
+              <p>战队: MY Pandas · 排名: 马来西亚前100 · 2025年加入 · 比赛: 2025春季赛32强</p>
+            </div>
+          </div>
+          <div class="pro-card" style="margin:0;">
+            <i class="fas fa-chess"></i>
+            <div class="pro-info">
+              <h3>围棋职业选手</h3>
+              <p>段位: 业余1段 · 比赛: 2024全国赛16强 · 俱乐部: 吉隆坡围棋社</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 性格特质专区 - 右侧大展示 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-smile"></i> 🧠 性格特质 · 全面分析
+        </div>
+        
+        <div class="trait-grid">
+          <div class="trait-item">
+            <i class="fas fa-brain"></i>
+            <h4>MBTI</h4>
+            <p>INFJ · 提倡者</p>
+            <p style="font-size:0.8rem;">理想主义 · 洞察力 · 创造力</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-hashtag"></i>
+            <h4>九型人格</h4>
+            <p>4w5 · 浪漫主义者</p>
+            <p style="font-size:0.8rem;">独特 · 内省 · 创意</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-chart-bar"></i>
+            <h4>大五人格</h4>
+            <p>RCOAN</p>
+            <p style="font-size:0.8rem;">开放性高 · 尽责性高</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-heart"></i>
+            <h4>核心价值观</h4>
+            <p>真诚 · 创造 · 成长</p>
+            <p style="font-size:0.8rem;">帮助他人 · 自我实现</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-thumbs-up"></i>
+            <h4>优点</h4>
+            <p>创意 · 同理心 · 学习力</p>
+            <p style="font-size:0.8rem;">洞察力 · 适应力</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-thumbs-down"></i>
+            <h4>缺点</h4>
+            <p>完美主义 · 过度思考</p>
+            <p style="font-size:0.8rem;">敏感 · 容易疲惫</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-users"></i>
+            <h4>社交风格</h4>
+            <p>倾听者 · 引导者</p>
+            <p style="font-size:0.8rem;">深度连接 · 小圈子</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-heartbeat"></i>
+            <h4>情绪特质</h4>
+            <p>敏感 · 热情 · 稳定</p>
+            <p style="font-size:0.8rem;">情绪丰富 · 同理心强</p>
+          </div>
+          <div class="trait-item">
+            <i class="fas fa-dove"></i>
+            <h4>爱情观</h4>
+            <p>灵魂伴侣 · 深度连接</p>
+            <p style="font-size:0.8rem;">忠诚 · 浪漫</p>
+          </div>
+        </div>
+      </div>
+
       <!-- 文凭证书专区 - 右侧大展示 -->
       <div class="cosmic-section">
         <div class="section-head">
-          <i class="fas fa-certificate"></i> 🎓 文凭/证书大全 · 30+项
+          <i class="fas fa-certificate"></i> 🎓 文凭/证书大全 · 50+项
         </div>
         
         <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-graduation-cap"></i> 学术文凭</div>
+            <div class="dimension-title"><i class="fas fa-graduation-cap"></i> 学术文凭 (10项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> 计算机科学学士 (拉曼大学)</li>
               <li><i class="fas fa-check-circle"></i> 心理学辅修 (拉曼大学)</li>
-              <li><i class="fas fa-check-circle"></i> 中医基础文凭 (马来西亚中医总会)</li>
+              <li><i class="fas fa-check-circle"></i> 中医基础文凭 (中医总会)</li>
               <li><i class="fas fa-check-circle"></i> 商业管理证书 (Coursera)</li>
               <li><i class="fas fa-check-circle"></i> 英语语言文凭 (British Council)</li>
+              <li><i class="fas fa-check-circle"></i> 数学基础证书 (MIT OpenCourseWare)</li>
+              <li><i class="fas fa-check-circle"></i> 哲学导论 (Oxford Online)</li>
+              <li><i class="fas fa-check-circle"></i> 经济学基础 (LSE)</li>
+              <li><i class="fas fa-check-circle"></i> 社会学概论 (Coursera)</li>
+              <li><i class="fas fa-check-circle"></i> 历史学基础 (Harvard Online)</li>
             </ul>
           </div>
           
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-code"></i> 技术认证</div>
+            <div class="dimension-title"><i class="fas fa-code"></i> 技术认证 (15项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> AWS云端从业者</li>
               <li><i class="fas fa-check-circle"></i> Google UX设计</li>
@@ -902,11 +1174,19 @@
               <li><i class="fas fa-check-circle"></i> 全栈开发认证 (Google)</li>
               <li><i class="fas fa-check-circle"></i> Roblox开发者认证</li>
               <li><i class="fas fa-check-circle"></i> 网络安全基础 (Cisco)</li>
+              <li><i class="fas fa-check-circle"></i> 区块链基础 (IBM)</li>
+              <li><i class="fas fa-check-circle"></i> 云计算架构 (Azure)</li>
+              <li><i class="fas fa-check-circle"></i> 数据库管理 (Oracle)</li>
+              <li><i class="fas fa-check-circle"></i> Python 进阶 (Coursera)</li>
+              <li><i class="fas fa-check-circle"></i> Java 认证 (Oracle)</li>
+              <li><i class="fas fa-check-circle"></i> React 专业认证 (Meta)</li>
+              <li><i class="fas fa-check-circle"></i> 移动开发 (Google)</li>
+              <li><i class="fas fa-check-circle"></i> 游戏开发 (Unity)</li>
             </ul>
           </div>
           
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-leaf"></i> 医学/健康</div>
+            <div class="dimension-title"><i class="fas fa-leaf"></i> 医学/健康 (8项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> 中医针灸专业认证</li>
               <li><i class="fas fa-check-circle"></i> 急救/CPR认证 (红新月会)</li>
@@ -914,11 +1194,13 @@
               <li><i class="fas fa-check-circle"></i> 瑜伽导师认证 (Yoga Alliance)</li>
               <li><i class="fas fa-check-circle"></i> 营养学基础 (Stanford)</li>
               <li><i class="fas fa-check-circle"></i> 心理咨询基础 (Coursera)</li>
+              <li><i class="fas fa-check-circle"></i> 中药学基础 (中医总会)</li>
+              <li><i class="fas fa-check-circle"></i> 推拿按摩认证 (中医总会)</li>
             </ul>
           </div>
           
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-paint-brush"></i> 创意/艺术</div>
+            <div class="dimension-title"><i class="fas fa-paint-brush"></i> 创意/艺术 (8项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> 专业摄影证书 (NYIP)</li>
               <li><i class="fas fa-check-circle"></i> 视频剪辑大师 (Adobe)</li>
@@ -926,29 +1208,34 @@
               <li><i class="fas fa-check-circle"></i> 平面设计 (CalArts)</li>
               <li><i class="fas fa-check-circle"></i> 音乐制作 (Berklee)</li>
               <li><i class="fas fa-check-circle"></i> 专业烹饪 (Le Cordon Bleu)</li>
+              <li><i class="fas fa-check-circle"></i> 插画基础 (Procreate)</li>
+              <li><i class="fas fa-check-circle"></i> 3D建模 (Blender)</li>
             </ul>
           </div>
           
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-language"></i> 语言证书</div>
+            <div class="dimension-title"><i class="fas fa-language"></i> 语言证书 (6项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> 雅思7.5 (British Council)</li>
               <li><i class="fas fa-check-circle"></i> 日语N3 (JLPT)</li>
               <li><i class="fas fa-check-circle"></i> 韩语TOPIK 1</li>
               <li><i class="fas fa-check-circle"></i> 马来语日常会话</li>
               <li><i class="fas fa-check-circle"></i> 粤语流利</li>
+              <li><i class="fas fa-check-circle"></i> 法语基础 (DELF A1)</li>
             </ul>
           </div>
           
           <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-medal"></i> 其他认证</div>
+            <div class="dimension-title"><i class="fas fa-medal"></i> 其他认证 (8项)</div>
             <ul class="dimension-list">
               <li><i class="fas fa-check-circle"></i> 项目管理PMP</li>
               <li><i class="fas fa-check-circle"></i> 围棋业余1段</li>
               <li><i class="fas fa-check-circle"></i> 救生员认证</li>
               <li><i class="fas fa-check-circle"></i> 游泳教练证</li>
-              <li><i class="fas fa-check-circle"></i> 潜水员OW</li>
+              <li><i class="fas fa-check-circle"></i> 潜水员OW (PADI)</li>
               <li><i class="fas fa-check-circle"></i> 登山领队证</li>
+              <li><i class="fas fa-check-circle"></i> 电竞选手认证</li>
+              <li><i class="fas fa-check-circle"></i> 裁判证 (羽毛球)</li>
             </ul>
           </div>
         </div>
@@ -1072,9 +1359,6 @@
             <span><i class="fas fa-chart-line"></i> 平台费 RM51.5</span>
             <span><i class="fas fa-calendar"></i> 上线: 2025.12</span>
           </div>
-          <div class="project-desc" style="margin-top: 12px;">
-            <i class="fas fa-tasks"></i> 功能: 首页 · 浏览 · 卖家 · 订单 · 仪表板 · 分析 · 团队 · 开发者空间 · 学习中心 · 社区 · 税务上报 · 帮助中心 · API文档 · 合作伙伴 · 招聘
-          </div>
         </div>
       </div>
 
@@ -1125,28 +1409,6 @@
           </div>
           <div class="project-desc">
             游戏/医学/编程/中医/心理学/烹饪交流 · 灵魂之约 · 每日话题 · 资源分享
-          </div>
-        </div>
-
-        <div class="project-vessel">
-          <div class="project-core">
-            <i class="fab fa-twitch"></i>
-            <span>Twitch · 熊猫团团</span>
-            <span style="font-size: 0.9rem;">3.8万关注</span>
-          </div>
-          <div class="project-desc">
-            每周直播5次 · 游戏/烹饪/聊天 · 平均观众1000+ · 总直播500+小时
-          </div>
-        </div>
-
-        <div class="project-vessel">
-          <div class="project-core">
-            <i class="fab fa-bilibili"></i>
-            <span>Bilibili · 团团熊猫</span>
-            <span style="font-size: 0.9rem;">37.2万粉丝</span>
-          </div>
-          <div class="project-desc">
-            250+视频 · 总播放3200w+ · 游戏/生活/科普 · 每周更新
           </div>
         </div>
       </div>
@@ -1237,6 +1499,8 @@
           <div class="achievement-cell"><i class="fas fa-camera"></i><span>摄影展入围</span></div>
           <div class="achievement-cell"><i class="fas fa-music"></i><span>校园歌手十佳</span></div>
           <div class="achievement-cell"><i class="fas fa-hiking"></i><span>登山登顶</span></div>
+          <div class="achievement-cell"><i class="fas fa-crosshairs"></i><span>Valorant钻石</span></div>
+          <div class="achievement-cell"><i class="fas fa-chess-board"></i><span>炉石传说8强</span></div>
         </div>
       </div>
 
@@ -1249,18 +1513,21 @@
           <span class="skill-atom"><i class="fas fa-check-circle" style="color: #28a745;"></i> 100万粉丝✅</span>
           <span class="skill-atom"><i class="fas fa-check-circle" style="color: #28a745;"></i> 针灸认证✅</span>
           <span class="skill-atom"><i class="fas fa-check-circle" style="color: #28a745;"></i> NovaServe上线✅</span>
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color: #28a745;"></i> 职业选手✅</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 出书《熊猫的斜杠人生》</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 去日本看樱花</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 开熊猫主题餐厅</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 学会钢琴</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 去冰岛看极光</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 跑马拉松</span>
+          <span class="skill-atom"><i class="fas fa-circle"></i> Valorant 大师段位</span>
+          <span class="skill-atom"><i class="fas fa-circle"></i> 炉石传说冠军</span>
         </div>
       </div>
 
       <!-- 页脚 -->
       <div class="space-footer">
-        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 无限领域 · 30+文凭 · 马来西亚团团熊猫 · 想到什么写什么 · 永远写不完 · 第18版 <i class="fas fa-bolt"></i><br>
+        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 职业选手 · 50+文凭 · 性格分析 · 马来西亚团团熊猫 · 想到什么写什么 · 永远写不完 · 第19版 <i class="fas fa-bolt"></i><br>
         📩 商务: tuantuan.panda@creator.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig | 🎮 灵约: discord.gg/7MfrQj5mJN
       </div>
     </div>
