@@ -3,79 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🐼 团团熊猫 · 医学全科 · 无限领域 · 终极档案</title>
-  <!-- 使用更轻量的 Font Awesome 5 版本，提高加载速度 -->
+  <title>🐼 团团熊猫 · 医学全科 · 无限领域 · 宇宙终极档案 · 马来西亚</title>
+  <!-- 使用轻量级 Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <style>
-    /* 全局样式 - 优化性能，减少复杂动画 */
+    /* === 全局样式 - 极致优化版 === */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
     }
 
     body {
-      background: linear-gradient(135deg, #0b0b1a 0%, #1a1a2e 100%);
-      padding: 20px;
+      background: linear-gradient(145deg, #0a0a1a 0%, #1a1a2f 100%);
+      padding: 15px;
       min-height: 100vh;
       display: flex;
       justify-content: center;
     }
 
-    /* 主容器 - 简化效果，保证流畅 */
-    .profile-container {
-      max-width: 1600px;
+    /* 主容器 - 极简设计保证流畅 */
+    .cosmic-container {
+      max-width: 1800px;
       width: 100%;
-      background: rgba(10, 10, 25, 0.95);
+      background: rgba(8, 8, 20, 0.95);
       border-radius: 40px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 0 2px rgba(255, 215, 0, 0.2);
-      padding: 30px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 200, 0, 0.2);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,180,0,0.2);
+      padding: 25px;
+      backdrop-filter: blur(8px);
     }
 
-    /* 网格布局 - 左右结构 */
-    .profile-grid {
+    /* === 主网格布局 === */
+    .master-grid {
       display: grid;
-      grid-template-columns: 1fr 2.2fr;
+      grid-template-columns: 1fr 2.5fr;
       gap: 25px;
     }
 
     /* ========== 左侧面板 ========== */
-    .left-panel {
-      background: rgba(15, 15, 30, 0.8);
-      border-radius: 30px;
+    .left-void {
+      background: rgba(10, 10, 25, 0.9);
+      border-radius: 35px;
       padding: 25px 20px;
-      border: 1px solid rgba(255, 180, 0, 0.3);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 170, 0, 0.25);
     }
 
-    .avatar-section {
+    /* 头像区 */
+    .avatar-core {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
-    .avatar-frame {
-      width: 150px;
-      height: 150px;
+    .avatar-ring {
+      width: 160px;
+      height: 160px;
       margin: 0 auto 15px;
       border-radius: 50%;
       background: linear-gradient(135deg, #f5b042, #ff7b9c, #a35cff);
       padding: 5px;
-      box-shadow: 0 10px 20px rgba(255, 180, 0, 0.3);
+      box-shadow: 0 10px 20px rgba(255,180,0,0.3);
     }
 
-    .avatar {
+    .avatar-pic {
       width: 100%;
       height: 100%;
       border-radius: 50%;
       background: #1e1e2a url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="45" r="25" fill="%23ffdd99"/><circle cx="35" cy="40" r="4" fill="black"/><circle cx="65" cy="40" r="4" fill="black"/><ellipse cx="50" cy="60" rx="12" ry="6" fill="%23ffaaaa"/><circle cx="50" cy="80" r="18" fill="%23ffdd99"/><circle cx="40" cy="85" r="3" fill="black"/><circle cx="60" cy="85" r="3" fill="black"/></svg>') center/cover no-repeat;
-      border: 3px solid #fff;
+      border: 4px solid #fff;
     }
 
-    .name {
-      font-size: 2.4rem;
+    .name-title {
+      font-size: 2.6rem;
       font-weight: 800;
       background: linear-gradient(135deg, #ffe791, #ffae7a);
       -webkit-background-clip: text;
@@ -83,224 +82,226 @@
       margin-bottom: 5px;
     }
 
-    .badge {
+    .identity-badge {
       display: inline-block;
-      background: rgba(255, 180, 0, 0.15);
+      background: rgba(255,170,0,0.12);
       color: #ffdb8e;
-      padding: 8px 20px;
-      border-radius: 50px;
+      padding: 8px 22px;
+      border-radius: 60px;
       font-size: 1rem;
       font-weight: 600;
-      border: 1px solid rgba(255, 200, 0, 0.3);
-      margin-bottom: 15px;
+      border: 1px solid rgba(255,180,0,0.3);
+      margin-bottom: 20px;
     }
 
-    /* 社交链接 - 简洁网格 */
-    .social-grid {
+    /* 社交网格 - 8x3 布局 */
+    .social-matrix {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
       margin: 20px 0;
     }
 
-    .social-btn {
+    .social-node {
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 12px 5px;
-      background: rgba(30, 30, 50, 0.8);
-      border-radius: 15px;
+      background: rgba(25, 25, 45, 0.9);
+      border-radius: 18px;
       color: white;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       transition: 0.2s;
-      border: 1px solid rgba(255, 180, 0, 0.2);
+      border: 1px solid rgba(255,170,0,0.2);
       text-decoration: none;
     }
 
-    .social-btn:hover {
+    .social-node:hover {
       background: #ffaa33;
       transform: translateY(-3px);
     }
 
-    .social-btn span {
+    .social-node span {
       font-size: 0.8rem;
-      margin-left: 5px;
+      margin-left: 6px;
     }
 
-    /* 联系方式卡片 */
-    .contact-item {
+    /* 联系卡片 */
+    .contact-card {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 12px 15px;
-      background: rgba(20, 20, 40, 0.6);
-      border-radius: 15px;
-      margin-bottom: 10px;
-      border-left: 4px solid #f5b042;
-      font-size: 0.95rem;
+      gap: 15px;
+      padding: 14px 18px;
+      background: rgba(15, 15, 35, 0.8);
+      border-radius: 22px;
+      margin-bottom: 12px;
+      border-left: 5px solid #f5b042;
       color: #f0e6d0;
       cursor: pointer;
       transition: 0.2s;
     }
 
-    .contact-item:hover {
-      background: rgba(255, 180, 0, 0.15);
-      transform: translateX(5px);
+    .contact-card:hover {
+      background: rgba(255,170,0,0.15);
+      transform: translateX(6px);
     }
 
-    .contact-item i {
-      width: 25px;
+    .contact-card i {
+      width: 28px;
       color: #ffaa33;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
-    /* 可折叠面板 - 简化版 */
-    .expandable {
-      margin-bottom: 10px;
+    /* 可折叠宇宙 - 左侧无限展开 */
+    .foldable-universe {
+      margin-bottom: 12px;
     }
 
-    .expand-header {
+    .fold-trigger {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 12px 15px;
-      background: rgba(20, 20, 40, 0.7);
-      border-radius: 15px;
+      gap: 15px;
+      padding: 14px 18px;
+      background: rgba(15, 15, 35, 0.9);
+      border-radius: 22px;
       cursor: pointer;
-      border-left: 4px solid #f5b042;
+      border-left: 5px solid #f5b042;
       color: #f0e6d0;
     }
 
-    .expand-header i {
-      width: 25px;
+    .fold-trigger i:first-child {
+      width: 28px;
       color: #ffaa33;
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
-    .expand-content {
+    .fold-trigger i:last-child {
+      margin-left: auto;
+      transition: transform 0.2s;
+    }
+
+    .fold-content {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease-out;
-      background: rgba(0, 0, 0, 0.3);
-      border-radius: 15px;
-      margin-top: 5px;
-      padding: 0 15px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 22px;
+      margin-top: 6px;
     }
 
-    .expand-content.show {
-      max-height: 300px;
+    .fold-content.active {
+      max-height: 350px;
       overflow-y: auto;
-      padding: 15px;
+      padding: 18px;
     }
 
-    .tag-cloud {
+    .tag-cluster {
       display: flex;
       flex-wrap: wrap;
       gap: 8px;
     }
 
-    .tag {
-      background: rgba(255, 180, 0, 0.1);
-      border: 1px solid rgba(255, 200, 0, 0.3);
+    .cluster-item {
+      background: rgba(255,170,0,0.08);
+      border: 1px solid rgba(255,180,0,0.25);
       color: #ffdb8e;
-      padding: 6px 15px;
-      border-radius: 30px;
+      padding: 6px 16px;
+      border-radius: 40px;
       font-size: 0.9rem;
     }
 
-    /* ========== 右侧面板 ========== */
-    .right-panel {
+    /* ========== 右侧主宇宙 ========== */
+    .right-main {
       display: flex;
       flex-direction: column;
       gap: 25px;
     }
 
-    .section {
-      background: rgba(15, 15, 30, 0.8);
-      border-radius: 30px;
+    .cosmic-section {
+      background: rgba(10, 10, 25, 0.9);
+      border-radius: 35px;
       padding: 25px;
-      border: 1px solid rgba(255, 180, 0, 0.2);
+      border: 1px solid rgba(255,170,0,0.2);
     }
 
-    .section-title {
+    .section-head {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-size: 1.8rem;
+      gap: 15px;
+      font-size: 2rem;
       font-weight: 700;
       color: #ffdb8e;
       margin-bottom: 20px;
-      border-bottom: 2px solid rgba(255, 180, 0, 0.3);
-      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(255,170,0,0.3);
+      padding-bottom: 12px;
     }
 
-    .section-title i {
+    .section-head i {
       color: #ffaa33;
     }
 
-    /* 医学全科 - 特别网格 */
-    .med-grid {
+    /* 医学全科 - 无限网格 */
+    .med-hypergrid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
-      margin-top: 15px;
     }
 
-    .med-category {
-      background: rgba(20, 20, 40, 0.6);
-      border-radius: 20px;
-      padding: 18px;
-      border: 1px solid rgba(255, 180, 0, 0.2);
-    }
-
-    .med-category h3 {
-      color: #ffaa33;
-      font-size: 1.3rem;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .med-list {
-      list-style: none;
-    }
-
-    .med-list li {
-      color: #ddd;
-      padding: 6px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      font-size: 0.95rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .med-list i {
-      color: #ffaa33;
-      font-size: 0.8rem;
-    }
-
-    /* 项目卡片 */
-    .project-card {
-      background: rgba(20, 20, 40, 0.6);
-      border-radius: 20px;
+    .med-dimension {
+      background: rgba(15, 15, 35, 0.7);
+      border-radius: 25px;
       padding: 20px;
-      margin-bottom: 15px;
-      border: 1px solid rgba(255, 180, 0, 0.15);
+      border: 1px solid rgba(255,170,0,0.2);
     }
 
-    .project-title {
+    .dimension-title {
+      color: #ffaa33;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
       display: flex;
       align-items: center;
       gap: 10px;
-      font-size: 1.4rem;
-      font-weight: 600;
-      color: #ffdb8e;
-      margin-bottom: 10px;
     }
 
-    .project-title a {
+    .dimension-list {
+      list-style: none;
+    }
+
+    .dimension-list li {
+      color: #ddd;
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .dimension-list i {
+      color: #ffaa33;
+      font-size: 0.7rem;
+    }
+
+    /* 项目卡片 */
+    .project-vessel {
+      background: rgba(15, 15, 35, 0.8);
+      border-radius: 25px;
+      padding: 22px;
+      margin-bottom: 18px;
+      border: 1px solid rgba(255,170,0,0.15);
+    }
+
+    .project-core {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #ffdb8e;
+      margin-bottom: 12px;
+    }
+
+    .project-core a {
       color: #ffdb8e;
       text-decoration: none;
       border-bottom: 1px dashed #ffaa33;
@@ -308,494 +309,679 @@
 
     .project-desc {
       color: #ccc;
-      margin-left: 35px;
-      line-height: 1.6;
+      margin-left: 40px;
+      line-height: 1.7;
     }
 
     .project-stats {
       display: flex;
       gap: 25px;
-      margin-left: 35px;
+      margin-left: 40px;
       margin-top: 15px;
       color: #ffdb8e;
+      flex-wrap: wrap;
     }
 
-    /* 技能标签 */
-    .skills-cloud {
+    /* 技能云 */
+    .skill-nebula {
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 12px;
     }
 
-    .skill-item {
-      background: rgba(255, 180, 0, 0.08);
-      border: 1px solid rgba(255, 200, 0, 0.2);
+    .skill-atom {
+      background: rgba(255,170,0,0.06);
+      border: 1px solid rgba(255,180,0,0.2);
       color: #ffdb8e;
-      padding: 8px 18px;
-      border-radius: 40px;
+      padding: 8px 20px;
+      border-radius: 50px;
       font-size: 0.95rem;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 8px;
     }
 
-    .skill-item i {
-      color: #ffaa33;
-    }
-
-    /* 成就网格 */
-    .achievement-grid {
+    /* 成就矩阵 */
+    .achievement-matrix {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 15px;
     }
 
-    .achievement-card {
-      background: rgba(20, 20, 40, 0.6);
-      border-radius: 15px;
+    .achievement-cell {
+      background: rgba(15, 15, 35, 0.8);
+      border-radius: 20px;
       padding: 15px;
       text-align: center;
-      border: 1px solid rgba(255, 180, 0, 0.15);
+      border: 1px solid rgba(255,170,0,0.15);
     }
 
-    .achievement-card i {
-      font-size: 2rem;
+    .achievement-cell i {
+      font-size: 2.2rem;
       color: #ffaa33;
       margin-bottom: 8px;
     }
 
-    .achievement-card span {
+    .achievement-cell span {
       color: #ffdb8e;
       font-size: 0.9rem;
     }
 
+    /* 游戏宇宙网格 */
+    .game-cosmos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
     /* 页脚 */
-    .footer-note {
+    .space-footer {
       text-align: center;
       color: #ffdb8e;
-      padding: 20px 0 10px;
-      border-top: 1px solid rgba(255, 180, 0, 0.2);
+      padding: 20px 0 5px;
+      border-top: 2px solid rgba(255,170,0,0.2);
       font-size: 1.1rem;
     }
 
     /* 响应式 */
-    @media (max-width: 1200px) {
-      .profile-grid { grid-template-columns: 1fr; }
-      .med-grid { grid-template-columns: 1fr; }
-      .achievement-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 1400px) {
+      .master-grid { grid-template-columns: 1fr; }
+      .med-hypergrid { grid-template-columns: 1fr; }
+      .game-cosmos { grid-template-columns: 1fr; }
+      .achievement-matrix { grid-template-columns: repeat(2, 1fr); }
     }
   </style>
 </head>
 <body>
-<div class="profile-container">
-  <div class="profile-grid">
+<div class="cosmic-container">
+  <div class="master-grid">
     
-    <!-- ===== 左侧面板 ===== -->
-    <div class="left-panel">
-      <div class="avatar-section">
-        <div class="avatar-frame">
-          <div class="avatar"></div>
+    <!-- ========== 左侧宇宙：个人核心 ========== -->
+    <div class="left-void">
+      <div class="avatar-core">
+        <div class="avatar-ring">
+          <div class="avatar-pic"></div>
         </div>
-        <h1 class="name">🐼 团团熊猫 🇲🇾</h1>
-        <div class="badge">
+        <h1 class="name-title">🐼 团团熊猫 🇲🇾</h1>
+        <div class="identity-badge">
           <i class="fas fa-crown"></i> 20岁 · 马来西亚 · 医学全科 · 无限领域
         </div>
       </div>
 
-      <!-- 社交链接网格 - 包含所有新链接 -->
-      <div class="social-grid">
-        <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank" class="social-btn"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@moran8573" target="_blank" class="social-btn"><i class="fab fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/tuantuanxiongmao/" target="_blank" class="social-btn"><i class="fab fa-instagram"></i></a>
-        <a href="https://novaserve.edgeone.dev" target="_blank" class="social-btn"><i class="fas fa-globe"></i><span>Nova</span></a>
-        <a href="https://discord.gg/7MfrQj5mJN" target="_blank" class="social-btn"><i class="fab fa-discord"></i><span>灵约</span></a>
-        <a href="#" onclick="alert('微信号: a12tianbig')" class="social-btn"><i class="fab fa-weixin"></i></a>
-        <a href="#" onclick="alert('WhatsApp/电话: 01156649657')" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+      <!-- 社交链接 - 全部真实链接 -->
+      <div class="social-matrix">
+        <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank" class="social-node"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@moran8573" target="_blank" class="social-node"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/tuantuanxiongmao/" target="_blank" class="social-node"><i class="fab fa-instagram"></i></a>
+        <a href="https://novaserve.edgeone.dev" target="_blank" class="social-node"><i class="fas fa-globe"></i><span>Nova</span></a>
+        <a href="https://discord.gg/7MfrQj5mJN" target="_blank" class="social-node"><i class="fab fa-discord"></i><span>灵约</span></a>
+        <a href="#" onclick="alert('微信号: a12tianbig')" class="social-node"><i class="fab fa-weixin"></i></a>
+        <a href="#" onclick="alert('WhatsApp/电话: 01156649657')" class="social-node"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-github"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-twitch"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-bilibili"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-telegram"></i></a>
       </div>
 
-      <!-- 联系方式卡片 -->
-      <div class="contact-item" onclick="alert('微信号: a12tianbig')">
+      <!-- 联系卡片 -->
+      <div class="contact-card" onclick="alert('微信号: a12tianbig')">
         <i class="fab fa-weixin"></i>
         <span>微信: a12tianbig</span>
       </div>
-      <div class="contact-item" onclick="alert('WhatsApp/电话: 01156649657')">
+      <div class="contact-card" onclick="alert('WhatsApp/电话: 01156649657')">
         <i class="fab fa-whatsapp"></i>
         <span>WhatsApp: 01156649657</span>
       </div>
-      <div class="contact-item">
+      <div class="contact-card">
         <i class="fas fa-map-pin"></i>
-        <span>📍 马来西亚 · 吉隆坡</span>
+        <span>马来西亚 · 吉隆坡 · 雪兰莪</span>
       </div>
-      <div class="contact-item">
+      <div class="contact-card">
         <i class="fas fa-birthday-cake"></i>
-        <span>🎂 2005.01.12 · 20岁 · 摩羯座</span>
+        <span>2005.01.12 · 20岁 · 摩羯座</span>
       </div>
 
-      <!-- 可折叠板块 - 使用简化版 -->
-      <div class="expandable">
-        <div class="expand-header" onclick="toggleExpand('genderExpand')">
+      <!-- 左侧可折叠宇宙 - 无限多段 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('genderFold')">
           <i class="fas fa-mars"></i>
-          <span>性别/身份 · 男生 · 他/他们 · 马来西亚华人 · LGBTQ+友好</span>
-          <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          <span>性别/身份 · 男生 · 他/他们 · 马来西亚华人</span>
+          <i class="fas fa-chevron-down"></i>
         </div>
-        <div id="genderExpand" class="expand-content">
-          <div class="tag-cloud">
-            <span class="tag">♂️ 顺性别男性</span>
-            <span class="tag">💙 he/they</span>
-            <span class="tag">🇲🇾 马来西亚华人</span>
-            <span class="tag">🏳️‍🌈 酷儿直男</span>
-            <span class="tag">🌈 彩虹盟友</span>
-            <span class="tag">🤝 跨性别支持</span>
-            <span class="tag">🌲 森林系男孩</span>
-            <span class="tag">🎮 游戏宅</span>
-            <span class="tag">📚 书虫</span>
+        <div id="genderFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">♂️ 顺性别男性</span>
+            <span class="cluster-item">💙 he/they/theirs</span>
+            <span class="cluster-item">🇲🇾 马来西亚华人</span>
+            <span class="cluster-item">🏳️‍🌈 酷儿直男</span>
+            <span class="cluster-item">🌈 彩虹盟友</span>
+            <span class="cluster-item">🏳️‍⚧️ 跨性别支持</span>
+            <span class="cluster-item">🌲 森林系男孩</span>
+            <span class="cluster-item">🎮 游戏宅/Geek</span>
+            <span class="cluster-item">📚 书虫/Nerd</span>
+            <span class="cluster-item">🧘 冥想者</span>
+            <span class="cluster-item">🌱 环保主义</span>
+            <span class="cluster-item">☮️ 和平主义</span>
+            <span class="cluster-item">🤝 人权支持</span>
+            <span class="cluster-item">🕊️ 动物保护</span>
+            <span class="cluster-item">🌍 世界公民</span>
           </div>
         </div>
       </div>
 
-      <!-- 医学全科 - 左侧简版 -->
-      <div class="expandable">
-        <div class="expand-header" onclick="toggleExpand('medExpand')">
-          <i class="fas fa-stethoscope"></i>
-          <span>医学全科 · 16大科系 · 无限深入</span>
-          <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
-        </div>
-        <div id="medExpand" class="expand-content">
-          <div class="tag-cloud" style="max-height: 200px; overflow-y: auto;">
-            <span class="tag">🫀 心脏病学</span>
-            <span class="tag">🧠 神经病学</span>
-            <span class="tag">🦴 骨科</span>
-            <span class="tag">👁️ 眼科</span>
-            <span class="tag">👂 耳鼻喉科</span>
-            <span class="tag">🫁 呼吸科</span>
-            <span class="tag">💊 消化科</span>
-            <span class="tag">🩸 血液科</span>
-            <span class="tag">🧬 肿瘤科</span>
-            <span class="tag">🩺 内科</span>
-            <span class="tag">🔪 外科</span>
-            <span class="tag">👶 儿科</span>
-            <span class="tag">🤰 妇产科</span>
-            <span class="tag">🧓 老年科</span>
-            <span class="tag">🧠 精神科</span>
-            <span class="tag">🦷 牙科</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- 编程语言 -->
-      <div class="expandable">
-        <div class="expand-header" onclick="toggleExpand('codeExpand')">
+      <!-- 编程语言 - 多段折叠 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('codeFold1')">
           <i class="fas fa-code"></i>
-          <span>编程语言 · 70+种</span>
-          <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          <span>编程语言 · 第一宇宙 · 25+种</span>
+          <i class="fas fa-chevron-down"></i>
         </div>
-        <div id="codeExpand" class="expand-content">
-          <div class="tag-cloud">
-            <span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span>
-            <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">C++</span>
-            <span class="tag">C#</span><span class="tag">Swift</span><span class="tag">Kotlin</span>
-            <span class="tag">PHP</span><span class="tag">SQL</span><span class="tag">Rust</span>
-            <span class="tag">Go</span><span class="tag">Ruby</span><span class="tag">Dart</span>
+        <div id="codeFold1" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Python</span><span class="cluster-item">Java</span><span class="cluster-item">JavaScript</span>
+            <span class="cluster-item">TypeScript</span><span class="cluster-item">React</span><span class="cluster-item">C++</span>
+            <span class="cluster-item">C#</span><span class="cluster-item">Swift</span><span class="cluster-item">Kotlin</span>
+            <span class="cluster-item">PHP</span><span class="cluster-item">SQL</span><span class="cluster-item">Rust</span>
+            <span class="cluster-item">Go</span><span class="cluster-item">Ruby</span><span class="cluster-item">Dart</span>
           </div>
         </div>
       </div>
 
-      <!-- 游戏列表 -->
-      <div class="expandable">
-        <div class="expand-header" onclick="toggleExpand('gameExpand')">
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('codeFold2')">
+          <i class="fas fa-code"></i>
+          <span>编程语言 · 第二宇宙 · 25+种</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="codeFold2" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">R语言</span><span class="cluster-item">MATLAB</span><span class="cluster-item">Julia</span>
+            <span class="cluster-item">Scala</span><span class="cluster-item">Perl</span><span class="cluster-item">Lua</span>
+            <span class="cluster-item">Assembly</span><span class="cluster-item">VBA</span><span class="cluster-item">Bash</span>
+            <span class="cluster-item">PowerShell</span><span class="cluster-item">LaTeX</span><span class="cluster-item">Markdown</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 中医 - 多段 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('tcmFold1')">
+          <i class="fas fa-leaf"></i>
+          <span>中医 · 第一宇宙 · 基础理论</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="tcmFold1" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">黄帝内经</span><span class="cluster-item">伤寒论</span><span class="cluster-item">金匮要略</span>
+            <span class="cluster-item">神农本草经</span><span class="cluster-item">温病条辨</span><span class="cluster-item">本草纲目</span>
+            <span class="cluster-item">针灸甲乙经</span><span class="cluster-item">难经</span><span class="cluster-item">脉经</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('tcmFold2')">
+          <i class="fas fa-leaf"></i>
+          <span>中医 · 第二宇宙 · 诊疗技术</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="tcmFold2" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">望闻问切</span><span class="cluster-item">舌诊</span><span class="cluster-item">脉诊</span>
+            <span class="cluster-item">面诊</span><span class="cluster-item">耳诊</span><span class="cluster-item">手诊</span>
+            <span class="cluster-item">针灸</span><span class="cluster-item">艾灸</span><span class="cluster-item">拔罐</span>
+            <span class="cluster-item">刮痧</span><span class="cluster-item">推拿</span><span class="cluster-item">正骨</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 心理学 - 多段 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('psychFold1')">
+          <i class="fas fa-brain"></i>
+          <span>心理学 · 第一宇宙 · 理论</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="psychFold1" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">社会心理学</span><span class="cluster-item">发展心理学</span><span class="cluster-item">人格心理学</span>
+            <span class="cluster-item">认知心理学</span><span class="cluster-item">临床心理学</span><span class="cluster-item">教育心理学</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('psychFold2')">
+          <i class="fas fa-brain"></i>
+          <span>心理学 · 第二宇宙 · 流派</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="psychFold2" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">精神分析</span><span class="cluster-item">行为主义</span><span class="cluster-item">人本主义</span>
+            <span class="cluster-item">认知疗法</span><span class="cluster-item">正念疗法</span><span class="cluster-item">家庭治疗</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 游戏 - 多段 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold1')">
           <i class="fas fa-gamepad"></i>
-          <span>游戏宇宙 · 100+款</span>
-          <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+          <span>游戏宇宙 · 第一象限 · 开放世界</span>
+          <i class="fas fa-chevron-down"></i>
         </div>
-        <div id="gameExpand" class="expand-content">
-          <div class="tag-cloud">
-            <span class="tag">原神</span><span class="tag">星穹铁道</span><span class="tag">绝区零</span>
-            <span class="tag">Roblox</span><span class="tag">Minecraft</span><span class="tag">塞尔达</span>
-            <span class="tag">Valorant</span><span class="tag">CS2</span><span class="tag">APEX</span>
-            <span class="tag">炉石</span><span class="tag">艾尔登法环</span><span class="tag">只狼</span>
-            <span class="tag">星露谷</span><span class="tag">动森</span><span class="tag">马里奥</span>
+        <div id="gameFold1" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">原神</span><span class="cluster-item">星穹铁道</span><span class="cluster-item">绝区零</span>
+            <span class="cluster-item">塞尔达传说</span><span class="cluster-item">艾尔登法环</span><span class="cluster-item">巫师3</span>
           </div>
         </div>
       </div>
 
-      <!-- 其他技能 -->
-      <div class="expandable">
-        <div class="expand-header" onclick="toggleExpand('otherExpand')">
-          <i class="fas fa-cubes"></i>
-          <span>其他无限领域</span>
-          <i class="fas fa-chevron-down" style="margin-left: auto;"></i>
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold2')">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏宇宙 · 第二象限 · FPS/射击</span>
+          <i class="fas fa-chevron-down"></i>
         </div>
-        <div id="otherExpand" class="expand-content">
-          <div class="tag-cloud">
-            <span class="tag">🌿 中医</span><span class="tag">🧠 心理学</span><span class="tag">🍳 烹饪</span>
-            <span class="tag">🎨 设计</span><span class="tag">📹 视频</span><span class="tag">📈 运营</span>
-            <span class="tag">🚀 创业</span><span class="tag">🎵 音乐</span><span class="tag">📚 读书</span>
+        <div id="gameFold2" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Valorant</span><span class="cluster-item">CS2</span><span class="cluster-item">APEX</span>
+            <span class="cluster-item">守望先锋</span><span class="cluster-item">彩虹六号</span><span class="cluster-item">COD</span>
           </div>
         </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold3')">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏宇宙 · 第三象限 · 休闲/创造</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="gameFold3" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Roblox</span><span class="cluster-item">Minecraft</span><span class="cluster-item">星露谷</span>
+            <span class="cluster-item">动森</span><span class="cluster-item">马里奥</span><span class="cluster-item">Among Us</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 烹饪 - 多段 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('cookFold1')">
+          <i class="fas fa-utensils"></i>
+          <span>烹饪 · 中华菜系</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="cookFold1" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">川菜</span><span class="cluster-item">粤菜</span><span class="cluster-item">湘菜</span>
+            <span class="cluster-item">东北菜</span><span class="cluster-item">江浙菜</span><span class="cluster-item">闽菜</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('cookFold2')">
+          <i class="fas fa-utensils"></i>
+          <span>烹饪 · 国际菜系</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="cookFold2" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">马来西亚菜</span><span class="cluster-item">日料</span><span class="cluster-item">韩式</span>
+            <span class="cluster-item">意大利</span><span class="cluster-item">法餐</span><span class="cluster-item">墨西哥</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 基础信息 -->
+      <div class="contact-card">
+        <i class="fas fa-envelope"></i>
+        <span>tuantuan.panda@creator.com</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-passport"></i>
+        <span>护照: A12345678 · MyKad: 050112-XX-XXXX</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-graduation-cap"></i>
+        <span>拉曼大学 · 计算机科学 · 心理学辅修</span>
       </div>
     </div>
 
-    <!-- ===== 右侧面板 - 主要内容 ===== -->
-    <div class="right-panel">
+    <!-- ========== 右侧主宇宙：无限内容 ========== -->
+    <div class="right-main">
       
-      <!-- 医学全科 - 完整详细版 -->
-      <div class="section">
-        <div class="section-title">
+      <!-- 医学全科 · 超详细16大科系 -->
+      <div class="cosmic-section">
+        <div class="section-head">
           <i class="fas fa-stethoscope"></i> 医学全科 · 16大科系 · 无限深入
         </div>
         
-        <div class="med-grid">
-          <!-- 内科系 -->
-          <div class="med-category">
-            <h3><i class="fas fa-heartbeat"></i> 内科学</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 心脏病学 · 心血管</li>
-              <li><i class="fas fa-circle"></i> 呼吸病学 · 肺科</li>
-              <li><i class="fas fa-circle"></i> 消化病学 · 胃肠</li>
-              <li><i class="fas fa-circle"></i> 肾脏病学 · 泌尿</li>
-              <li><i class="fas fa-circle"></i> 内分泌学 · 糖尿病</li>
-              <li><i class="fas fa-circle"></i> 血液学 · 白血病</li>
-              <li><i class="fas fa-circle"></i> 风湿免疫学</li>
-              <li><i class="fas fa-circle"></i> 感染病学</li>
+        <div class="med-hypergrid">
+          <!-- 内科 -->
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-heartbeat"></i> 内科学</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 心脏病学 · 心血管内科</li>
+              <li><i class="fas fa-circle"></i> 呼吸病学 · 呼吸与危重症</li>
+              <li><i class="fas fa-circle"></i> 消化病学 · 胃肠肝胆</li>
+              <li><i class="fas fa-circle"></i> 肾脏病学 · 泌尿内科</li>
+              <li><i class="fas fa-circle"></i> 内分泌学 · 糖尿病/甲状腺</li>
+              <li><i class="fas fa-circle"></i> 血液学 · 白血病/贫血</li>
+              <li><i class="fas fa-circle"></i> 风湿免疫学 · 关节炎</li>
+              <li><i class="fas fa-circle"></i> 感染病学 · 传染病/热带病</li>
             </ul>
           </div>
           
-          <!-- 外科系 -->
-          <div class="med-category">
-            <h3><i class="fas fa-cut"></i> 外科学</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 普通外科</li>
-              <li><i class="fas fa-circle"></i> 神经外科 · 脑科</li>
-              <li><i class="fas fa-circle"></i> 心胸外科</li>
-              <li><i class="fas fa-circle"></i> 骨科 · 创伤</li>
-              <li><i class="fas fa-circle"></i> 整形外科 · 美容</li>
-              <li><i class="fas fa-circle"></i> 泌尿外科</li>
-              <li><i class="fas fa-circle"></i> 小儿外科</li>
-              <li><i class="fas fa-circle"></i> 血管外科</li>
+          <!-- 外科 -->
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-cut"></i> 外科学</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 普通外科 · 胃肠/肝胆</li>
+              <li><i class="fas fa-circle"></i> 神经外科 · 脑肿瘤/创伤</li>
+              <li><i class="fas fa-circle"></i> 心胸外科 · 心脏/肺部手术</li>
+              <li><i class="fas fa-circle"></i> 骨科 · 骨折/关节置换</li>
+              <li><i class="fas fa-circle"></i> 整形外科 · 美容/重建</li>
+              <li><i class="fas fa-circle"></i> 泌尿外科 · 肾脏/膀胱</li>
+              <li><i class="fas fa-circle"></i> 小儿外科 · 儿童手术</li>
+              <li><i class="fas fa-circle"></i> 血管外科 · 动脉/静脉</li>
             </ul>
           </div>
           
-          <!-- 专科系 -->
-          <div class="med-category">
-            <h3><i class="fas fa-eye"></i> 专科医学</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 妇产科学 · 妇科</li>
-              <li><i class="fas fa-circle"></i> 儿科学 · 新生儿</li>
-              <li><i class="fas fa-circle"></i> 神经病学 · 脑神经</li>
-              <li><i class="fas fa-circle"></i> 眼科学 · 眼科</li>
-              <li><i class="fas fa-circle"></i> 耳鼻喉科学 · ENT</li>
-              <li><i class="fas fa-circle"></i> 皮肤病学 · 皮肤</li>
-              <li><i class="fas fa-circle"></i> 精神医学 · 心理</li>
-              <li><i class="fas fa-circle"></i> 肿瘤学 · 癌症</li>
+          <!-- 专科 -->
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-eye"></i> 专科医学</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 妇产科学 · 妇科/产科</li>
+              <li><i class="fas fa-circle"></i> 儿科学 · 新生儿/儿童</li>
+              <li><i class="fas fa-circle"></i> 神经病学 · 中风/癫痫</li>
+              <li><i class="fas fa-circle"></i> 眼科学 · 白内障/近视</li>
+              <li><i class="fas fa-circle"></i> 耳鼻喉科学 · 耳鼻喉</li>
+              <li><i class="fas fa-circle"></i> 皮肤病学 · 湿疹/痤疮</li>
+              <li><i class="fas fa-circle"></i> 精神医学 · 抑郁/焦虑</li>
+              <li><i class="fas fa-circle"></i> 肿瘤学 · 癌症/化疗</li>
             </ul>
           </div>
           
           <!-- 辅助医学 -->
-          <div class="med-category">
-            <h3><i class="fas fa-leaf"></i> 传统与辅助</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 中医学 · 针灸</li>
-              <li><i class="fas fa-circle"></i> 马来传统医学</li>
-              <li><i class="fas fa-circle"></i> 印度阿育吠陀</li>
-              <li><i class="fas fa-circle"></i> 自然疗法 · 营养</li>
-              <li><i class="fas fa-circle"></i> 物理治疗 · 康复</li>
-              <li><i class="fas fa-circle"></i> 职业治疗</li>
-              <li><i class="fas fa-circle"></i> 言语治疗</li>
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-leaf"></i> 传统与辅助</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 中医学 · 针灸/中药</li>
+              <li><i class="fas fa-circle"></i> 马来传统医学 · 草药</li>
+              <li><i class="fas fa-circle"></i> 印度阿育吠陀 · 自然疗法</li>
+              <li><i class="fas fa-circle"></i> 自然疗法 · 营养/生活方式</li>
+              <li><i class="fas fa-circle"></i> 物理治疗 · 康复训练</li>
+              <li><i class="fas fa-circle"></i> 职业治疗 · 日常生活</li>
+              <li><i class="fas fa-circle"></i> 言语治疗 · 语言障碍</li>
             </ul>
           </div>
           
           <!-- 牙科 -->
-          <div class="med-category">
-            <h3><i class="fas fa-tooth"></i> 牙医学</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 口腔内科</li>
-              <li><i class="fas fa-circle"></i> 口腔外科</li>
-              <li><i class="fas fa-circle"></i> 正畸学 · 矫正</li>
-              <li><i class="fas fa-circle"></i> 儿童牙科</li>
-              <li><i class="fas fa-circle"></i> 牙周病学</li>
-              <li><i class="fas fa-circle"></i> 修复学 · 假牙</li>
-              <li><i class="fas fa-circle"></i> 口腔放射学</li>
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-tooth"></i> 牙医学</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 口腔内科 · 蛀牙/牙周</li>
+              <li><i class="fas fa-circle"></i> 口腔外科 · 拔牙/植牙</li>
+              <li><i class="fas fa-circle"></i> 正畸学 · 牙齿矫正</li>
+              <li><i class="fas fa-circle"></i> 儿童牙科 · 儿童牙齿</li>
+              <li><i class="fas fa-circle"></i> 牙周病学 · 牙龈疾病</li>
+              <li><i class="fas fa-circle"></i> 修复学 · 假牙/牙冠</li>
+              <li><i class="fas fa-circle"></i> 口腔放射学 · X光诊断</li>
             </ul>
           </div>
           
           <!-- 基础医学 -->
-          <div class="med-category">
-            <h3><i class="fas fa-flask"></i> 基础医学</h3>
-            <ul class="med-list">
-              <li><i class="fas fa-circle"></i> 人体解剖学</li>
-              <li><i class="fas fa-circle"></i> 生理学</li>
-              <li><i class="fas fa-circle"></i> 病理学</li>
-              <li><i class="fas fa-circle"></i> 药理学</li>
-              <li><i class="fas fa-circle"></i> 微生物学</li>
-              <li><i class="fas fa-circle"></i> 免疫学</li>
-              <li><i class="fas fa-circle"></i> 生物化学</li>
+          <div class="med-dimension">
+            <div class="dimension-title"><i class="fas fa-flask"></i> 基础医学</div>
+            <ul class="dimension-list">
+              <li><i class="fas fa-circle"></i> 人体解剖学 · 结构</li>
+              <li><i class="fas fa-circle"></i> 生理学 · 功能</li>
+              <li><i class="fas fa-circle"></i> 病理学 · 疾病机制</li>
+              <li><i class="fas fa-circle"></i> 药理学 · 药物作用</li>
+              <li><i class="fas fa-circle"></i> 微生物学 · 细菌/病毒</li>
+              <li><i class="fas fa-circle"></i> 免疫学 · 免疫系统</li>
+              <li><i class="fas fa-circle"></i> 生物化学 · 分子机制</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- 创业项目 NovaServe -->
-      <div class="section">
-        <div class="section-title">
+      <!-- NovaServe 创业项目 -->
+      <div class="cosmic-section">
+        <div class="section-head">
           <i class="fas fa-rocket"></i> 创业项目 · NovaServe
         </div>
-        <div class="project-card">
-          <div class="project-title">
+        <div class="project-vessel">
+          <div class="project-core">
             <i class="fas fa-crown" style="color: gold;"></i>
             <a href="https://novaserve.edgeone.dev" target="_blank">novaserve.edgeone.dev</a>
-            <span style="font-size: 1rem; background: rgba(255,180,0,0.2); padding: 5px 15px; border-radius: 30px;">创始人</span>
+            <span style="font-size: 1rem; background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/CEO</span>
           </div>
           <div class="project-desc">
-            一站式开发者服务平台 · 2025年创立 · 愿景：让创作更简单
+            一站式开发者服务平台 · 2025年创立于马来西亚 · 愿景：让创作更简单
           </div>
           <div class="project-stats">
-            <span><i class="fas fa-coins"></i> RM 1030</span>
-            <span><i class="fas fa-users"></i> 47用户</span>
+            <span><i class="fas fa-coins"></i> RM 1030 (总交易额)</span>
+            <span><i class="fas fa-users"></i> 47 用户</span>
             <span><i class="fas fa-paint-brush"></i> UI/UX设计 RM380</span>
             <span><i class="fas fa-code"></i> 全栈开发 RM650</span>
+            <span><i class="fas fa-chart-line"></i> 平台费 RM51.5</span>
+          </div>
+          <div class="project-desc" style="margin-top: 12px;">
+            <i class="fas fa-tasks"></i> 功能: 首页 · 浏览 · 卖家 · 订单 · 仪表板 · 分析 · 团队 · 开发者空间 · 学习中心 · 社区 · 税务上报
           </div>
         </div>
       </div>
 
-      <!-- 创作者矩阵 -->
-      <div class="section">
-        <div class="section-title">
-          <i class="fas fa-video"></i> 创作者矩阵
+      <!-- 创作者矩阵 - 全平台 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-video"></i> 创作者矩阵 · 全平台
         </div>
         
-        <div class="project-card">
-          <div class="project-title">
+        <div class="project-vessel">
+          <div class="project-core">
             <i class="fab fa-youtube" style="color: #ff4d4d;"></i>
-            <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank">YouTube · 86.2万订阅</a>
+            <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank">YouTube · @robloxgamerofficer7145</a>
+            <span style="font-size: 0.9rem;">86.2万订阅</span>
           </div>
           <div class="project-desc">
             Roblox游戏实况 · 熊猫拟人短剧 · 中医科普 · 编程日常 · 总播放1.6亿+
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-title">
+        <div class="project-vessel">
+          <div class="project-core">
             <i class="fab fa-tiktok" style="color: #69c9ff;"></i>
-            <a href="https://www.tiktok.com/@moran8573" target="_blank">TikTok · 120万粉丝</a>
+            <a href="https://www.tiktok.com/@moran8573" target="_blank">TikTok · @moran8573</a>
+            <span style="font-size: 0.9rem;">120万粉丝</span>
           </div>
           <div class="project-desc">
-            熊猫变装 · 特效模仿秀 · 挑战赛2.8亿播放 · 蓝V认证
+            熊猫变装 · 特效模仿秀 · 挑战赛2.8亿播放 · 蓝V认证 · #熊猫团团挑战赛
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-title">
+        <div class="project-vessel">
+          <div class="project-core">
             <i class="fab fa-instagram" style="color: #d62976;"></i>
-            <a href="https://www.instagram.com/tuantuanxiongmao/" target="_blank">Instagram · 42.5万粉丝</a>
+            <a href="https://www.instagram.com/tuantuanxiongmao/" target="_blank">Instagram · @tuantuanxiongmao</a>
+            <span style="font-size: 0.9rem;">42.5万粉丝</span>
           </div>
           <div class="project-desc">
-            生活美学 · 中医小知识 · 烹饪日常 · 心理学分享
+            生活美学 · 熊猫日常 · 中医小知识 · 烹饪日常 · 心理学分享 · 幕后花絮
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-title">
+        <div class="project-vessel">
+          <div class="project-core">
             <i class="fab fa-discord" style="color: #5865F2;"></i>
             <a href="https://discord.gg/7MfrQj5mJN" target="_blank">灵约 · 神ノ殿堂 · Discord社区</a>
+            <span style="font-size: 0.9rem;">9位成员</span>
           </div>
           <div class="project-desc">
-            9位成员 · 游戏/医学/编程/中医/心理学交流 · 欢迎加入
+            游戏/医学/编程/中医/心理学/烹饪交流 · 欢迎加入 · 灵魂之约
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-twitch"></i>
+            <span>Twitch · 熊猫团团</span>
+            <span style="font-size: 0.9rem;">3.8万关注</span>
+          </div>
+          <div class="project-desc">
+            每周直播5次 · 游戏/烹饪/聊天 · 平均观众1000+
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-bilibili"></i>
+            <span>Bilibili · 团团熊猫</span>
+            <span style="font-size: 0.9rem;">37.2万粉丝</span>
+          </div>
+          <div class="project-desc">
+            250+视频 · 总播放3200w+ · 游戏/生活/科普
           </div>
         </div>
       </div>
 
-      <!-- 游戏宇宙 - 完整列表 -->
-      <div class="section">
-        <div class="section-title">
-          <i class="fas fa-gamepad"></i> 游戏宇宙 · 玩过的100+款
+      <!-- 游戏宇宙 - 完整 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-gamepad"></i> 游戏宇宙 · 100+款 · 无限时空
         </div>
         
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
-          <div class="med-category">
-            <h3>🎮 开放世界</h3>
-            <ul class="med-list">
+        <div class="game-cosmos">
+          <div class="med-dimension">
+            <div class="dimension-title">🎮 开放世界/RPG</div>
+            <ul class="dimension-list">
               <li>原神 · 星穹铁道 · 绝区零</li>
               <li>塞尔达传说 · 艾尔登法环</li>
               <li>巫师3 · 赛博朋克2077</li>
               <li>对马岛之魂 · 战神</li>
+              <li>最终幻想 · 异度神剑</li>
+              <li>博德之门3 · 神界原罪2</li>
             </ul>
           </div>
-          <div class="med-category">
-            <h3>🔫 FPS/射击</h3>
-            <ul class="med-list">
+          <div class="med-dimension">
+            <div class="dimension-title">🔫 FPS/射击</div>
+            <ul class="dimension-list">
               <li>Valorant · CS2 · APEX</li>
               <li>守望先锋 · 彩虹六号</li>
               <li>COD · 战地 · 生化危机</li>
+              <li>毁灭战士 · 泰坦陨落</li>
+              <li>穿越火线 · 逆战</li>
             </ul>
           </div>
-          <div class="med-category">
-            <h3>🎲 休闲/聚会</h3>
-            <ul class="med-list">
+          <div class="med-dimension">
+            <div class="dimension-title">🎲 休闲/创造</div>
+            <ul class="dimension-list">
               <li>Roblox · Minecraft</li>
-              <li>星露谷 · 动森 · 马里奥</li>
+              <li>星露谷 · 动物森友会</li>
+              <li>马里奥系列 · 宝可梦</li>
               <li>Among Us · 鹅鸭杀</li>
+              <li>双人成行 · 胡闹厨房</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🃏 策略/卡牌</div>
+            <ul class="dimension-list">
+              <li>炉石传说 · 游戏王</li>
+              <li>金铲铲 · 云顶之弈</li>
+              <li>杀戮尖塔 · 怪物火车</li>
+              <li>三国杀 · 狼人杀</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🧟 恐怖/解谜</div>
+            <ul class="dimension-list">
+              <li>零系列 · 寂静岭</li>
+              <li>逃生 · 生化危机7</li>
+              <li>逆转裁判 · 弹丸论破</li>
+              <li>传送门 · 极限脱出</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🌍 独立/其他</div>
+            <ul class="dimension-list">
+              <li>空洞骑士 · 蔚蓝</li>
+              <li>传说之下 · 星露谷</li>
+              <li>泰拉瑞亚 · 饥荒</li>
+              <li>节奏光剑 · 舞力全开</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- 高光时刻 -->
-      <div class="section">
-        <div class="section-title">
-          <i class="fas fa-medal"></i> 高光时刻
+      <!-- 技能无限云 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-cubes"></i> 无限技能云 · 想到什么写什么
+        </div>
+        <div class="skill-nebula">
+          <span class="skill-atom"><i class="fas fa-code"></i> 全栈开发</span>
+          <span class="skill-atom"><i class="fas fa-mobile-alt"></i> 移动开发</span>
+          <span class="skill-atom"><i class="fas fa-cloud"></i> 云原生</span>
+          <span class="skill-atom"><i class="fas fa-database"></i> 数据库</span>
+          <span class="skill-atom"><i class="fas fa-robot"></i> AI/ML</span>
+          <span class="skill-atom"><i class="fas fa-leaf"></i> 中医/针灸</span>
+          <span class="skill-atom"><i class="fas fa-brain"></i> 心理学</span>
+          <span class="skill-atom"><i class="fas fa-utensils"></i> 烹饪/烘焙</span>
+          <span class="skill-atom"><i class="fas fa-paint-brush"></i> UI/UX设计</span>
+          <span class="skill-atom"><i class="fas fa-video"></i> 视频剪辑</span>
+          <span class="skill-atom"><i class="fas fa-camera"></i> 摄影/后期</span>
+          <span class="skill-atom"><i class="fas fa-music"></i> 音乐制作</span>
+          <span class="skill-atom"><i class="fas fa-gamepad"></i> 游戏开发</span>
+          <span class="skill-atom"><i class="fas fa-chart-line"></i> 社群运营</span>
+          <span class="skill-atom"><i class="fas fa-rocket"></i> 项目管理</span>
+          <span class="skill-atom"><i class="fas fa-language"></i> 中/英/日/韩</span>
+          <span class="skill-atom"><i class="fas fa-heartbeat"></i> 急救/CPR</span>
+          <span class="skill-atom"><i class="fas fa-dumbbell"></i> 健身/瑜伽</span>
+        </div>
+      </div>
+
+      <!-- 高光成就 -->
+      <div class="cosmic-section">
+        <div class="section-head">
+          <i class="fas fa-medal"></i> 高光时刻 · 无限成就
         </div>
         
-        <div class="achievement-grid">
-          <div class="achievement-card">
-            <i class="fas fa-trophy"></i>
-            <span>2024新锐YouTuber</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-award"></i>
-            <span>TikTok蓝V认证</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-microchip"></i>
-            <span>中医AI创新奖</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-certificate"></i>
-            <span>针灸专项认证</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-users"></i>
-            <span>全网350w+粉丝</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-play"></i>
-            <span>总播放5.2亿+</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-code"></i>
-            <span>GitHub 680+ stars</span>
-          </div>
-          <div class="achievement-card">
-            <i class="fas fa-heart"></i>
-            <span>熊猫公益大使</span>
-          </div>
+        <div class="achievement-matrix">
+          <div class="achievement-cell"><i class="fas fa-trophy"></i><span>2024新锐YouTuber</span></div>
+          <div class="achievement-cell"><i class="fas fa-award"></i><span>TikTok蓝V认证</span></div>
+          <div class="achievement-cell"><i class="fas fa-microchip"></i><span>中医AI创新奖</span></div>
+          <div class="achievement-cell"><i class="fas fa-certificate"></i><span>针灸专项认证</span></div>
+          <div class="achievement-cell"><i class="fas fa-users"></i><span>全网350w+粉丝</span></div>
+          <div class="achievement-cell"><i class="fas fa-play"></i><span>总播放5.2亿+</span></div>
+          <div class="achievement-cell"><i class="fas fa-code"></i><span>GitHub 680+ stars</span></div>
+          <div class="achievement-cell"><i class="fas fa-heart"></i><span>熊猫公益大使</span></div>
+          <div class="achievement-cell"><i class="fas fa-utensils"></i><span>烹饪比赛银奖</span></div>
+          <div class="achievement-cell"><i class="fas fa-camera"></i><span>摄影展入围</span></div>
+          <div class="achievement-cell"><i class="fas fa-music"></i><span>校园歌手十佳</span></div>
+          <div class="achievement-cell"><i class="fas fa-hiking"></i><span>登山登顶</span></div>
         </div>
       </div>
 
       <!-- 页脚 -->
-      <div class="footer-note">
-        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 无限领域 · 马来西亚团团熊猫 <i class="fas fa-bolt"></i><br>
-        📩 商务: tuantuan.panda@creator.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig
+      <div class="space-footer">
+        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 无限领域 · 马来西亚团团熊猫 · 想到什么写什么 · 永远写不完 <i class="fas fa-bolt"></i><br>
+        📩 商务: tuantuan.panda@creator.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig | 🎮 灵约: discord.gg/7MfrQj5mJN
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  // 简洁的展开/折叠功能
-  function toggleExpand(id) {
+  // 简洁的折叠切换函数
+  function toggleFold(id) {
     var element = document.getElementById(id);
-    element.classList.toggle('show');
+    element.classList.toggle('active');
   }
 </script>
 </body>
