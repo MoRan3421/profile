@@ -94,7 +94,7 @@
       margin-bottom: 20px;
     }
 
-    /* 社交网格 - 8x4 布局 */
+    /* 社交网格 - 8x5 布局 (40个社交平台) */
     .social-matrix {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -408,7 +408,7 @@
         </div>
       </div>
 
-      <!-- 社交链接 - 全部真实链接 + 更多平台 -->
+      <!-- 社交链接 - 全部真实链接 + 40+平台 -->
       <div class="social-matrix">
         <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank" class="social-node"><i class="fab fa-youtube"></i></a>
         <a href="https://www.tiktok.com/@moran8573" target="_blank" class="social-node"><i class="fab fa-tiktok"></i></a>
@@ -434,9 +434,24 @@
         <a href="#" class="social-node"><i class="fab fa-kakao"></i></a>
         <a href="#" class="social-node"><i class="fab fa-spotify"></i></a>
         <a href="#" class="social-node"><i class="fab fa-apple"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-google"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-microsoft"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-amazon"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-slack"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-trello"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-jira"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-stack-overflow"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-hacker-news"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-product-hunt"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-behance"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-dribbble"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-figma"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-unsplash"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-dev"></i></a>
+        <a href="#" class="social-node"><i class="fab fa-hashnode"></i></a>
       </div>
 
-      <!-- 联系卡片 -->
+      <!-- 联系卡片 - 新增更多联系方式 -->
       <div class="contact-card" onclick="alert('微信号: a12tianbig')">
         <i class="fab fa-weixin"></i>
         <span>微信: a12tianbig</span>
@@ -451,7 +466,7 @@
       </div>
       <div class="contact-card">
         <i class="fas fa-birthday-cake"></i>
-        <span>2005.01.12 · 20岁 · 摩羯座 · 属鸡</span>
+        <span>2005.01.12 · 20岁 · 摩羯座 · 属鸡 · 乙酉年</span>
       </div>
       <div class="contact-card">
         <i class="fas fa-envelope"></i>
@@ -463,22 +478,30 @@
       </div>
       <div class="contact-card">
         <i class="fas fa-graduation-cap"></i>
-        <span>拉曼大学 · 计算机科学 · 心理学辅修 · 中医社团</span>
+        <span>拉曼大学 · 计算机科学 · 心理学辅修 · 中医社团 · 创业社团</span>
       </div>
       <div class="contact-card">
         <i class="fas fa-car"></i>
-        <span>驾照: D · 车: Myvi 熊猫特别版</span>
+        <span>驾照: D · 车: Myvi 熊猫特别版 · 车牌: PMK 8888</span>
       </div>
       <div class="contact-card">
         <i class="fas fa-ruler"></i>
-        <span>身高182cm · 体重72kg · 血型O</span>
+        <span>身高182cm · 体重72kg · 血型O · 视力1.5 · 鞋码44</span>
       </div>
       <div class="contact-card">
         <i class="fas fa-tshirt"></i>
-        <span>穿衣风格: 休闲/街头/简约</span>
+        <span>穿衣风格: 休闲/街头/简约/日系/韩系/复古</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-heartbeat"></i>
+        <span>健康状况: 良好 · 定期体检 · 献血5次 · 器官捐献志愿者</span>
+      </div>
+      <div class="contact-card">
+        <i class="fas fa-moon"></i>
+        <span>睡眠: 夜猫子型 · 3点睡 · 11点起 · 平均7小时</span>
       </div>
 
-      <!-- 左侧可折叠宇宙 - 无限多段 (新增更多) -->
+      <!-- 左侧可折叠宇宙 - 无限多段 (新增第6-10宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('genderFold')">
           <i class="fas fa-mars"></i>
@@ -504,11 +527,12 @@
             <span class="cluster-item">🌍 世界公民</span>
             <span class="cluster-item">✨ 灵性探索</span>
             <span class="cluster-item">🌀 多元文化</span>
+            <span class="cluster-item">🎭 艺术爱好者</span>
           </div>
         </div>
       </div>
 
-      <!-- 编程语言 - 多段折叠 (新增第5宇宙) -->
+      <!-- 编程语言 - 多段折叠 (新增第6宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('codeFold1')">
           <i class="fas fa-code"></i>
@@ -523,6 +547,7 @@
             <span class="cluster-item">Django</span><span class="cluster-item">Flask</span><span class="cluster-item">Spring Boot</span>
             <span class="cluster-item">C++</span><span class="cluster-item">C#</span><span class="cluster-item">.NET</span>
             <span class="cluster-item">HTML5</span><span class="cluster-item">CSS3</span><span class="cluster-item">Sass</span>
+            <span class="cluster-item">Tailwind</span><span class="cluster-item">Bootstrap</span><span class="cluster-item">jQuery</span>
           </div>
         </div>
       </div>
@@ -539,6 +564,7 @@
             <span class="cluster-item">React Native</span><span class="cluster-item">Dart</span><span class="cluster-item">Objective-C</span>
             <span class="cluster-item">Java Android</span><span class="cluster-item">SwiftUI</span><span class="cluster-item">Jetpack Compose</span>
             <span class="cluster-item">Xamarin</span><span class="cluster-item">Ionic</span><span class="cluster-item">Cordova</span>
+            <span class="cluster-item">Capacitor</span><span class="cluster-item">NativeScript</span><span class="cluster-item">PhoneGap</span>
           </div>
         </div>
       </div>
@@ -556,6 +582,7 @@
             <span class="cluster-item">R语言</span><span class="cluster-item">MATLAB</span><span class="cluster-item">Pandas</span>
             <span class="cluster-item">NumPy</span><span class="cluster-item">TensorFlow</span><span class="cluster-item">PyTorch</span>
             <span class="cluster-item">Tableau</span><span class="cluster-item">PowerBI</span><span class="cluster-item">Excel</span>
+            <span class="cluster-item">SQLite</span><span class="cluster-item">Oracle</span><span class="cluster-item">MariaDB</span>
           </div>
         </div>
       </div>
@@ -572,6 +599,7 @@
             <span class="cluster-item">Assembly</span><span class="cluster-item">Zig</span><span class="cluster-item">Julia</span>
             <span class="cluster-item">Scala</span><span class="cluster-item">Perl</span><span class="cluster-item">Lua</span>
             <span class="cluster-item">Haskell</span><span class="cluster-item">Erlang</span><span class="cluster-item">Elixir</span>
+            <span class="cluster-item">OCaml</span><span class="cluster-item">F#</span><span class="cluster-item">Clojure</span>
           </div>
         </div>
       </div>
@@ -588,11 +616,28 @@
             <span class="cluster-item">AWS</span><span class="cluster-item">Azure</span><span class="cluster-item">GCP</span>
             <span class="cluster-item">Linux</span><span class="cluster-item">Bash</span><span class="cluster-item">PowerShell</span>
             <span class="cluster-item">Jenkins</span><span class="cluster-item">GitHub Actions</span><span class="cluster-item">Terraform</span>
+            <span class="cluster-item">Ansible</span><span class="cluster-item">Puppet</span><span class="cluster-item">Chef</span>
           </div>
         </div>
       </div>
 
-      <!-- 中医 - 多段 (新增第5宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('codeFold6')">
+          <i class="fas fa-code"></i>
+          <span>编程语言 · 第六宇宙 · 前端框架</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="codeFold6" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Next.js</span><span class="cluster-item">Nuxt.js</span><span class="cluster-item">Gatsby</span>
+            <span class="cluster-item">Remix</span><span class="cluster-item">Svelte</span><span class="cluster-item">Solid</span>
+            <span class="cluster-item">Qwik</span><span class="cluster-item">Astro</span><span class="cluster-item">Alpine.js</span>
+            <span class="cluster-item">Preact</span><span class="cluster-item">Lit</span><span class="cluster-item">Stencil</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 中医 - 多段 (新增第6-8宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('tcmFold1')">
           <i class="fas fa-leaf"></i>
@@ -606,6 +651,7 @@
             <span class="cluster-item">针灸甲乙经</span><span class="cluster-item">难经</span><span class="cluster-item">脉经</span>
             <span class="cluster-item">素问</span><span class="cluster-item">灵枢</span><span class="cluster-item">太素</span>
             <span class="cluster-item">医宗金鉴</span><span class="cluster-item">千金方</span><span class="cluster-item">外台秘要</span>
+            <span class="cluster-item">伤寒来苏集</span><span class="cluster-item">温病正宗</span><span class="cluster-item">本草备要</span>
           </div>
         </div>
       </div>
@@ -623,6 +669,7 @@
             <span class="cluster-item">针灸</span><span class="cluster-item">艾灸</span><span class="cluster-item">拔罐</span>
             <span class="cluster-item">刮痧</span><span class="cluster-item">推拿</span><span class="cluster-item">正骨</span>
             <span class="cluster-item">放血</span><span class="cluster-item">穴位注射</span><span class="cluster-item">电针</span>
+            <span class="cluster-item">埋线</span><span class="cluster-item">耳针</span><span class="cluster-item">头针</span>
           </div>
         </div>
       </div>
@@ -640,6 +687,7 @@
             <span class="cluster-item">小柴胡汤</span><span class="cluster-item">四物汤</span><span class="cluster-item">四君子汤</span>
             <span class="cluster-item">六味地黄丸</span><span class="cluster-item">八珍汤</span><span class="cluster-item">十全大补汤</span>
             <span class="cluster-item">人参</span><span class="cluster-item">黄芪</span><span class="cluster-item">当归</span>
+            <span class="cluster-item">枸杞</span><span class="cluster-item">甘草</span><span class="cluster-item">白术</span>
           </div>
         </div>
       </div>
@@ -656,6 +704,7 @@
             <span class="cluster-item">六字诀</span><span class="cluster-item">易筋经</span><span class="cluster-item">站桩</span>
             <span class="cluster-item">气功</span><span class="cluster-item">导引术</span><span class="cluster-item">呼吸法</span>
             <span class="cluster-item">冥想</span><span class="cluster-item">静坐</span><span class="cluster-item">养生操</span>
+            <span class="cluster-item">太极剑</span><span class="cluster-item">八卦掌</span><span class="cluster-item">形意拳</span>
           </div>
         </div>
       </div>
@@ -672,11 +721,64 @@
             <span class="cluster-item">手太阴肺经</span><span class="cluster-item">足阳明胃经</span><span class="cluster-item">手少阴心经</span>
             <span class="cluster-item">足太阳膀胱经</span><span class="cluster-item">手厥阴心包经</span><span class="cluster-item">足少阴肾经</span>
             <span class="cluster-item">手阳明大肠经</span><span class="cluster-item">足太阴脾经</span><span class="cluster-item">手太阳小肠经</span>
+            <span class="cluster-item">足少阳胆经</span><span class="cluster-item">手少阳三焦经</span><span class="cluster-item">足厥阴肝经</span>
           </div>
         </div>
       </div>
 
-      <!-- 心理学 - 多段 (新增第4宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('tcmFold6')">
+          <i class="fas fa-leaf"></i>
+          <span>中医 · 第六宇宙 · 穴位大全</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="tcmFold6" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">合谷</span><span class="cluster-item">足三里</span><span class="cluster-item">三阴交</span>
+            <span class="cluster-item">太冲</span><span class="cluster-item">涌泉</span><span class="cluster-item">百会</span>
+            <span class="cluster-item">大椎</span><span class="cluster-item">命门</span><span class="cluster-item">关元</span>
+            <span class="cluster-item">气海</span><span class="cluster-item">神阙</span><span class="cluster-item">中脘</span>
+            <span class="cluster-item">内关</span><span class="cluster-item">外关</span><span class="cluster-item">曲池</span>
+            <span class="cluster-item">阳陵泉</span><span class="cluster-item">阴陵泉</span><span class="cluster-item">血海</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('tcmFold7')">
+          <i class="fas fa-leaf"></i>
+          <span>中医 · 第七宇宙 · 辨证论治</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="tcmFold7" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">八纲辨证</span><span class="cluster-item">脏腑辨证</span><span class="cluster-item">六经辨证</span>
+            <span class="cluster-item">卫气营血</span><span class="cluster-item">三焦辨证</span><span class="cluster-item">气血津液</span>
+            <span class="cluster-item">表里</span><span class="cluster-item">寒热</span><span class="cluster-item">虚实</span>
+            <span class="cluster-item">阴阳</span><span class="cluster-item">气虚</span><span class="cluster-item">血虚</span>
+            <span class="cluster-item">阴虚</span><span class="cluster-item">阳虚</span><span class="cluster-item">痰湿</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('tcmFold8')">
+          <i class="fas fa-leaf"></i>
+          <span>中医 · 第八宇宙 · 中医名家</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="tcmFold8" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">张仲景</span><span class="cluster-item">华佗</span><span class="cluster-item">扁鹊</span>
+            <span class="cluster-item">孙思邈</span><span class="cluster-item">李时珍</span><span class="cluster-item">张景岳</span>
+            <span class="cluster-item">叶天士</span><span class="cluster-item">吴鞠通</span><span class="cluster-item">王清任</span>
+            <span class="cluster-item">朱丹溪</span><span class="cluster-item">李东垣</span><span class="cluster-item">刘完素</span>
+            <span class="cluster-item">张子和</span><span class="cluster-item">皇甫谧</span><span class="cluster-item">葛洪</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 心理学 - 多段 (新增第5-7宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('psychFold1')">
           <i class="fas fa-brain"></i>
@@ -689,6 +791,7 @@
             <span class="cluster-item">认知心理学</span><span class="cluster-item">生物心理学</span><span class="cluster-item">进化心理学</span>
             <span class="cluster-item">积极心理学</span><span class="cluster-item">格式塔</span><span class="cluster-item">存在主义</span>
             <span class="cluster-item">荣格心理学</span><span class="cluster-item">阿德勒心理学</span><span class="cluster-item">个体心理学</span>
+            <span class="cluster-item">后现代主义</span><span class="cluster-item">建构主义</span><span class="cluster-item">系统论</span>
           </div>
         </div>
       </div>
@@ -705,6 +808,7 @@
             <span class="cluster-item">临床心理学</span><span class="cluster-item">教育心理学</span><span class="cluster-item">组织心理学</span>
             <span class="cluster-item">健康心理学</span><span class="cluster-item">神经心理学</span><span class="cluster-item">跨文化心理学</span>
             <span class="cluster-item">运动心理学</span><span class="cluster-item">法律心理学</span><span class="cluster-item">消费心理学</span>
+            <span class="cluster-item">环境心理学</span><span class="cluster-item">社区心理学</span><span class="cluster-item">学校心理学</span>
           </div>
         </div>
       </div>
@@ -721,6 +825,7 @@
             <span class="cluster-item">艺术治疗</span><span class="cluster-item">游戏治疗</span><span class="cluster-item">叙事治疗</span>
             <span class="cluster-item">EMDR</span><span class="cluster-item">催眠治疗</span><span class="cluster-item">团体治疗</span>
             <span class="cluster-item">心理剧</span><span class="cluster-item">沙盘治疗</span><span class="cluster-item">音乐治疗</span>
+            <span class="cluster-item">舞蹈治疗</span><span class="cluster-item">戏剧治疗</span><span class="cluster-item">宠物治疗</span>
           </div>
         </div>
       </div>
@@ -736,12 +841,64 @@
             <span class="cluster-item">MBTI</span><span class="cluster-item">大五人格</span><span class="cluster-item">九型人格</span>
             <span class="cluster-item">16PF</span><span class="cluster-item">MMPI</span><span class="cluster-item">SCL-90</span>
             <span class="cluster-item">SDS抑郁</span><span class="cluster-item">SAS焦虑</span><span class="cluster-item">EPQ</span>
-            <span class="cluster-item">韦氏智力</span><span class="cluster-item">瑞文推理</span>
+            <span class="cluster-item">韦氏智力</span><span class="cluster-item">瑞文推理</span><span class="cluster-item">比奈智力</span>
+            <span class="cluster-item">人格障碍</span><span class="cluster-item">投射测验</span><span class="cluster-item">罗夏墨迹</span>
           </div>
         </div>
       </div>
 
-      <!-- 游戏 - 多段 (新增第6-7宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('psychFold5')">
+          <i class="fas fa-brain"></i>
+          <span>心理学 · 第五宇宙 · 心理学家</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="psychFold5" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">弗洛伊德</span><span class="cluster-item">荣格</span><span class="cluster-item">阿德勒</span>
+            <span class="cluster-item">皮亚杰</span><span class="cluster-item">埃里克森</span><span class="cluster-item">弗洛姆</span>
+            <span class="cluster-item">马斯洛</span><span class="cluster-item">罗杰斯</span><span class="cluster-item">华生</span>
+            <span class="cluster-item">斯金纳</span><span class="cluster-item">班杜拉</span><span class="cluster-item">维果斯基</span>
+            <span class="cluster-item">塞利格曼</span><span class="cluster-item">艾利斯</span><span class="cluster-item">贝克</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('psychFold6')">
+          <i class="fas fa-brain"></i>
+          <span>心理学 · 第六宇宙 · 异常心理学</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="psychFold6" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">抑郁症</span><span class="cluster-item">焦虑症</span><span class="cluster-item">强迫症</span>
+            <span class="cluster-item">创伤后应激</span><span class="cluster-item">人格障碍</span><span class="cluster-item">精神分裂</span>
+            <span class="cluster-item">双相障碍</span><span class="cluster-item">进食障碍</span><span class="cluster-item">失眠症</span>
+            <span class="cluster-item">成瘾</span><span class="cluster-item">自闭症</span><span class="cluster-item">多动症</span>
+            <span class="cluster-item">边缘型人格</span><span class="cluster-item">自恋型人格</span><span class="cluster-item">反社会人格</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('psychFold7')">
+          <i class="fas fa-brain"></i>
+          <span>心理学 · 第七宇宙 · 发展心理学</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="psychFold7" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">婴儿期</span><span class="cluster-item">幼儿期</span><span class="cluster-item">童年期</span>
+            <span class="cluster-item">青春期</span><span class="cluster-item">成年早期</span><span class="cluster-item">中年期</span>
+            <span class="cluster-item">老年期</span><span class="cluster-item">认知发展</span><span class="cluster-item">道德发展</span>
+            <span class="cluster-item">依恋理论</span><span class="cluster-item">语言发展</span><span class="cluster-item">性别认同</span>
+            <span class="cluster-item">社会性发展</span><span class="cluster-item">情绪发展</span><span class="cluster-item">人格发展</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 游戏 - 多段 (新增第8-10宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('gameFold1')">
           <i class="fas fa-gamepad"></i>
@@ -755,6 +912,7 @@
             <span class="cluster-item">赛博朋克2077</span><span class="cluster-item">对马岛之魂</span><span class="cluster-item">战神</span>
             <span class="cluster-item">荒野大镖客2</span><span class="cluster-item">GTA5</span><span class="cluster-item">上古卷轴5</span>
             <span class="cluster-item">辐射4</span><span class="cluster-item">地平线</span><span class="cluster-item">死亡搁浅</span>
+            <span class="cluster-item">刺客信条</span><span class="cluster-item">最终幻想</span><span class="cluster-item">异度神剑</span>
           </div>
         </div>
       </div>
@@ -772,6 +930,7 @@
             <span class="cluster-item">战地</span><span class="cluster-item">生化危机</span><span class="cluster-item">毁灭战士</span>
             <span class="cluster-item">泰坦陨落</span><span class="cluster-item">PUBG</span><span class="cluster-item">堡垒之夜</span>
             <span class="cluster-item">使命召唤</span><span class="cluster-item">CF</span><span class="cluster-item">逆战</span>
+            <span class="cluster-item">无主之地</span><span class="cluster-item">命运2</span><span class="cluster-item">光环</span>
           </div>
         </div>
       </div>
@@ -789,6 +948,7 @@
             <span class="cluster-item">鹅鸭杀</span><span class="cluster-item">双人成行</span><span class="cluster-item">胡闹厨房</span>
             <span class="cluster-item">舞力全开</span><span class="cluster-item">健身环</span><span class="cluster-item">集合啦</span>
             <span class="cluster-item">创世小玩家</span><span class="cluster-item">泰拉瑞亚</span><span class="cluster-item">饥荒</span>
+            <span class="cluster-item">模拟人生</span><span class="cluster-item">城市天际线</span><span class="cluster-item">过山车之星</span>
           </div>
         </div>
       </div>
@@ -806,6 +966,7 @@
             <span class="cluster-item">三国杀</span><span class="cluster-item">狼人杀</span><span class="cluster-item">影之诗</span>
             <span class="cluster-item">符文大地传说</span><span class="cluster-item">文明6</span><span class="cluster-item">三国志</span>
             <span class="cluster-item">帝国时代</span><span class="cluster-item">星际争霸</span><span class="cluster-item">魔兽争霸</span>
+            <span class="cluster-item">英雄无敌</span><span class="cluster-item">全面战争</span><span class="cluster-item">十字军之王</span>
           </div>
         </div>
       </div>
@@ -823,6 +984,7 @@
             <span class="cluster-item">传送门</span><span class="cluster-item">极限脱出</span><span class="cluster-item">层层恐惧</span>
             <span class="cluster-item">失忆症</span><span class="cluster-item">返校</span><span class="cluster-item">还愿</span>
             <span class="cluster-item">美丽水世界</span><span class="cluster-item">深海迷航</span><span class="cluster-item">森林</span>
+            <span class="cluster-item">寂静岭2</span><span class="cluster-item">生化危机2</span><span class="cluster-item">死魂曲</span>
           </div>
         </div>
       </div>
@@ -839,6 +1001,8 @@
             <span class="cluster-item">哈迪斯</span><span class="cluster-item">死亡细胞</span><span class="cluster-item">奥日</span>
             <span class="cluster-item">茶杯头</span><span class="cluster-item">武士零</span><span class="cluster-item">铲子骑士</span>
             <span class="cluster-item">星露谷</span><span class="cluster-item">泰拉瑞亚</span><span class="cluster-item">饥荒</span>
+            <span class="cluster-item">以撒的结合</span><span class="cluster-item">吸血鬼幸存者</span><span class="cluster-item">潜水员戴夫</span>
+            <span class="cluster-item">星之海</span><span class="cluster-item">歧路旅人</span><span class="cluster-item">神之天平</span>
           </div>
         </div>
       </div>
@@ -855,11 +1019,65 @@
             <span class="cluster-item">真人快打</span><span class="cluster-item">任天堂大乱斗</span><span class="cluster-item">龙珠斗士</span>
             <span class="cluster-item">鬼泣</span><span class="cluster-item">猎天使魔女</span><span class="cluster-item">忍者龙剑传</span>
             <span class="cluster-item">只狼</span><span class="cluster-item">仁王</span><span class="cluster-item">卧龙</span>
+            <span class="cluster-item">怪物猎人</span><span class="cluster-item">噬神者</span><span class="cluster-item">讨鬼传</span>
+            <span class="cluster-item">黑魂</span><span class="cluster-item">血源</span><span class="cluster-item">匹诺曹</span>
           </div>
         </div>
       </div>
 
-      <!-- 烹饪 - 多段 (新增第4-5宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold8')">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏宇宙 · 第八象限 · 赛车/体育</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="gameFold8" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">极限竞速</span><span class="cluster-item">地平线</span><span class="cluster-item">GT赛车</span>
+            <span class="cluster-item">FIFA</span><span class="cluster-item">NBA 2K</span><span class="cluster-item">实况足球</span>
+            <span class="cluster-item">2K</span><span class="cluster-item">极品飞车</span><span class="cluster-item">尘埃</span>
+            <span class="cluster-item">F1</span><span class="cluster-item">赛车计划</span><span class="cluster-item">WRC</span>
+            <span class="cluster-item">马里奥赛车</span><span class="cluster-item">古惑狼赛车</span><span class="cluster-item">索尼克赛车</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold9')">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏宇宙 · 第九象限 · 手游/网游</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="gameFold9" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">王者荣耀</span><span class="cluster-item">和平精英</span><span class="cluster-item">LOL手游</span>
+            <span class="cluster-item">金铲铲</span><span class="cluster-item">原神</span><span class="cluster-item">星穹铁道</span>
+            <span class="cluster-item">绝区零</span><span class="cluster-item">阴阳师</span><span class="cluster-item">决战平安京</span>
+            <span class="cluster-item">崩坏3</span><span class="cluster-item">明日方舟</span><span class="cluster-item">碧蓝航线</span>
+            <span class="cluster-item">FGO</span><span class="cluster-item">赛马娘</span><span class="cluster-item">蔚蓝档案</span>
+            <span class="cluster-item">妮姬</span><span class="cluster-item">尘白禁区</span><span class="cluster-item">无期迷途</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('gameFold10')">
+          <i class="fas fa-gamepad"></i>
+          <span>游戏宇宙 · 第十象限 · 怀旧/经典</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="gameFold10" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">超级马里奥</span><span class="cluster-item">魂斗罗</span><span class="cluster-item">坦克大战</span>
+            <span class="cluster-item">冒险岛</span><span class="cluster-item">热血系列</span><span class="cluster-item">双截龙</span>
+            <span class="cluster-item">洛克人</span><span class="cluster-item">恶魔城</span><span class="cluster-item">银河战士</span>
+            <span class="cluster-item">最终幻想7</span><span class="cluster-item">勇者斗恶龙</span><span class="cluster-item">塞尔达初代</span>
+            <span class="cluster-item">口袋妖怪</span><span class="cluster-item">星之卡比</span><span class="cluster-item">耀西岛</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 烹饪 - 多段 (新增第6-7宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('cookFold1')">
           <i class="fas fa-utensils"></i>
@@ -872,6 +1090,7 @@
             <span class="cluster-item">东北菜</span><span class="cluster-item">江浙菜</span><span class="cluster-item">闽菜</span>
             <span class="cluster-item">鲁菜</span><span class="cluster-item">徽菜</span><span class="cluster-item">京菜</span>
             <span class="cluster-item">淮扬菜</span><span class="cluster-item">本帮菜</span><span class="cluster-item">客家菜</span>
+            <span class="cluster-item">潮州菜</span><span class="cluster-item">台州菜</span><span class="cluster-item">宁波菜</span>
           </div>
         </div>
       </div>
@@ -888,6 +1107,7 @@
             <span class="cluster-item">意大利</span><span class="cluster-item">法餐</span><span class="cluster-item">墨西哥</span>
             <span class="cluster-item">泰国菜</span><span class="cluster-item">印度菜</span><span class="cluster-item">越南菜</span>
             <span class="cluster-item">西班牙</span><span class="cluster-item">希腊</span><span class="cluster-item">土耳其</span>
+            <span class="cluster-item">摩洛哥</span><span class="cluster-item">秘鲁</span><span class="cluster-item">巴西</span>
           </div>
         </div>
       </div>
@@ -904,6 +1124,7 @@
             <span class="cluster-item">马卡龙</span><span class="cluster-item">提拉米苏</span><span class="cluster-item">泡芙</span>
             <span class="cluster-item">布丁</span><span class="cluster-item">慕斯</span><span class="cluster-item">舒芙蕾</span>
             <span class="cluster-item">可颂</span><span class="cluster-item">丹麦酥</span><span class="cluster-item">欧包</span>
+            <span class="cluster-item">拿破仑</span><span class="cluster-item">黑森林</span><span class="cluster-item">歌剧院</span>
           </div>
         </div>
       </div>
@@ -919,6 +1140,8 @@
             <span class="cluster-item">煎蕊</span><span class="cluster-item">红豆冰</span><span class="cluster-item">曼煎糕</span>
             <span class="cluster-item">咖喱角</span><span class="cluster-item">炸香蕉</span><span class="cluster-item">烤乌达</span>
             <span class="cluster-item">臭豆腐</span><span class="cluster-item">烤串</span><span class="cluster-item">章鱼烧</span>
+            <span class="cluster-item">蚵仔煎</span><span class="cluster-item">肉夹馍</span><span class="cluster-item">煎饼果子</span>
+            <span class="cluster-item">鸡蛋仔</span><span class="cluster-item">鱼蛋</span><span class="cluster-item">碗仔翅</span>
           </div>
         </div>
       </div>
@@ -934,11 +1157,47 @@
             <span class="cluster-item">手冲咖啡</span><span class="cluster-item">拉花</span><span class="cluster-item">冷萃</span>
             <span class="cluster-item">奶茶</span><span class="cluster-item">奶盖</span><span class="cluster-item">水果茶</span>
             <span class="cluster-item">抹茶</span><span class="cluster-item">功夫茶</span><span class="cluster-item">调酒</span>
+            <span class="cluster-item">特调</span><span class="cluster-item">气泡水</span><span class="cluster-item">果昔</span>
+            <span class="cluster-item">冰沙</span><span class="cluster-item">奶昔</span><span class="cluster-item">热巧克力</span>
           </div>
         </div>
       </div>
 
-      <!-- 视频创作 - 多段 (新增第3宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('cookFold6')">
+          <i class="fas fa-utensils"></i>
+          <span>烹饪 · 厨具/器材</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="cookFold6" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">铸铁锅</span><span class="cluster-item">不粘锅</span><span class="cluster-item">砂锅</span>
+            <span class="cluster-item">空气炸锅</span><span class="cluster-item">烤箱</span><span class="cluster-item">微波炉</span>
+            <span class="cluster-item">破壁机</span><span class="cluster-item">厨师机</span><span class="cluster-item">面包机</span>
+            <span class="cluster-item">咖啡机</span><span class="cluster-item">磨豆机</span><span class="cluster-item">手冲壶</span>
+            <span class="cluster-item">刀具</span><span class="cluster-item">砧板</span><span class="cluster-item">锅铲</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('cookFold7')">
+          <i class="fas fa-utensils"></i>
+          <span>烹饪 · 食材/调味</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="cookFold7" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">酱油</span><span class="cluster-item">醋</span><span class="cluster-item">料酒</span>
+            <span class="cluster-item">蚝油</span><span class="cluster-item">鱼露</span><span class="cluster-item">虾酱</span>
+            <span class="cluster-item">辣椒</span><span class="cluster-item">花椒</span><span class="cluster-item">八角</span>
+            <span class="cluster-item">肉桂</span><span class="cluster-item">香叶</span><span class="cluster-item">草果</span>
+            <span class="cluster-item">咖喱</span><span class="cluster-item">椰浆</span><span class="cluster-item">香茅</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 视频创作 - 多段 (新增第4-5宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('videoFold1')">
           <i class="fas fa-video"></i>
@@ -951,6 +1210,7 @@
             <span class="cluster-item">运镜</span><span class="cluster-item">灯光</span><span class="cluster-item">录音</span>
             <span class="cluster-item">摄影</span><span class="cluster-item">构图</span><span class="cluster-item">导演</span>
             <span class="cluster-item">选角</span><span class="cluster-item">制片</span><span class="cluster-item">场记</span>
+            <span class="cluster-item">美术指导</span><span class="cluster-item">道具</span><span class="cluster-item">服装</span>
           </div>
         </div>
       </div>
@@ -967,6 +1227,7 @@
             <span class="cluster-item">After Effects</span><span class="cluster-item">达芬奇</span><span class="cluster-item">调色</span>
             <span class="cluster-item">剪辑</span><span class="cluster-item">特效</span><span class="cluster-item">转场</span>
             <span class="cluster-item">字幕</span><span class="cluster-item">音效</span><span class="cluster-item">配乐</span>
+            <span class="cluster-item">混音</span><span class="cluster-item">母带</span><span class="cluster-item">动态图形</span>
           </div>
         </div>
       </div>
@@ -983,11 +1244,46 @@
             <span class="cluster-item">抖音</span><span class="cluster-item">小红书</span><span class="cluster-item">视频号</span>
             <span class="cluster-item">数据分析</span><span class="cluster-item">SEO</span><span class="cluster-item">算法</span>
             <span class="cluster-item">涨粉策略</span><span class="cluster-item">变现</span><span class="cluster-item">合作</span>
+            <span class="cluster-item">社群运营</span><span class="cluster-item">粉丝互动</span><span class="cluster-item">热点追踪</span>
           </div>
         </div>
       </div>
 
-      <!-- 设计 - 多段 (新增第4宇宙) -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('videoFold4')">
+          <i class="fas fa-video"></i>
+          <span>视频创作 · 器材/设备</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="videoFold4" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">单反</span><span class="cluster-item">微单</span><span class="cluster-item">手机</span>
+            <span class="cluster-item">稳定器</span><span class="cluster-item">三脚架</span><span class="cluster-item">滑轨</span>
+            <span class="cluster-item">无人机</span><span class="cluster-item">GoPro</span><span class="cluster-item">运动相机</span>
+            <span class="cluster-item">麦克风</span><span class="cluster-item">录音笔</span><span class="cluster-item">声卡</span>
+            <span class="cluster-item">灯光</span><span class="cluster-item">柔光箱</span><span class="cluster-item">反光板</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('videoFold5')">
+          <i class="fas fa-video"></i>
+          <span>视频创作 · 类型/风格</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="videoFold5" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Vlog</span><span class="cluster-item">纪录片</span><span class="cluster-item">短视频</span>
+            <span class="cluster-item">宣传片</span><span class="cluster-item">广告</span><span class="cluster-item">MV</span>
+            <span class="cluster-item">教程</span><span class="cluster-item">测评</span><span class="cluster-item">开箱</span>
+            <span class="cluster-item">直播</span><span class="cluster-item">访谈</span><span class="cluster-item">微电影</span>
+            <span class="cluster-item">动画</span><span class="cluster-item">定格动画</span><span class="cluster-item">延时摄影</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 设计 - 多段 (新增第5-6宇宙) -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('designFold1')">
           <i class="fas fa-paint-brush"></i>
@@ -1000,6 +1296,7 @@
             <span class="cluster-item">交互设计</span><span class="cluster-item">原型</span><span class="cluster-item">用户测试</span>
             <span class="cluster-item">信息架构</span><span class="cluster-item">线框图</span><span class="cluster-item">可用性</span>
             <span class="cluster-item">用户画像</span><span class="cluster-item">用户旅程</span><span class="cluster-item">A/B测试</span>
+            <span class="cluster-item">响应式设计</span><span class="cluster-item">设计系统</span><span class="cluster-item">组件库</span>
           </div>
         </div>
       </div>
@@ -1016,6 +1313,7 @@
             <span class="cluster-item">品牌设计</span><span class="cluster-item">排版</span><span class="cluster-item">插画</span>
             <span class="cluster-item">字体设计</span><span class="cluster-item">LOGO</span><span class="cluster-item">VI系统</span>
             <span class="cluster-item">海报</span><span class="cluster-item">包装</span><span class="cluster-item">画册</span>
+            <span class="cluster-item">宣传册</span><span class="cluster-item">名片</span><span class="cluster-item">折页</span>
           </div>
         </div>
       </div>
@@ -1032,6 +1330,7 @@
             <span class="cluster-item">3ds Max</span><span class="cluster-item">动效设计</span><span class="cluster-item">Lottie</span>
             <span class="cluster-item">建模</span><span class="cluster-item">渲染</span><span class="cluster-item">动画</span>
             <span class="cluster-item">材质</span><span class="cluster-item">灯光</span><span class="cluster-item">UV</span>
+            <span class="cluster-item">绑定</span><span class="cluster-item">雕刻</span><span class="cluster-item">粒子</span>
           </div>
         </div>
       </div>
@@ -1048,6 +1347,41 @@
             <span class="cluster-item">人像摄影</span><span class="cluster-item">风光摄影</span><span class="cluster-item">街拍</span>
             <span class="cluster-item">构图</span><span class="cluster-item">光影</span><span class="cluster-item">色彩</span>
             <span class="cluster-item">修图</span><span class="cluster-item">调色</span><span class="cluster-item">后期</span>
+            <span class="cluster-item">磨皮</span><span class="cluster-item">液化</span><span class="cluster-item">合成</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('designFold5')">
+          <i class="fas fa-paint-brush"></i>
+          <span>设计 · 插画/手绘</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="designFold5" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">Procreate</span><span class="cluster-item">素描</span><span class="cluster-item">水彩</span>
+            <span class="cluster-item">油画</span><span class="cluster-item">马克笔</span><span class="cluster-item">彩铅</span>
+            <span class="cluster-item">板绘</span><span class="cluster-item">数位屏</span><span class="cluster-item">手绘板</span>
+            <span class="cluster-item">漫画</span><span class="cluster-item">原画</span><span class="cluster-item">概念设计</span>
+            <span class="cluster-item">角色设计</span><span class="cluster-item">场景设计</span><span class="cluster-item">分镜</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('designFold6')">
+          <i class="fas fa-paint-brush"></i>
+          <span>设计 · 设计理论</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="designFold6" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">色彩理论</span><span class="cluster-item">排版原则</span><span class="cluster-item">网格系统</span>
+            <span class="cluster-item">黄金分割</span><span class="cluster-item">视觉层级</span><span class="cluster-item">对比</span>
+            <span class="cluster-item">重复</span><span class="cluster-item">对齐</span><span class="cluster-item">亲密性</span>
+            <span class="cluster-item">留白</span><span class="cluster-item">平衡</span><span class="cluster-item">韵律</span>
+            <span class="cluster-item">统一</span><span class="cluster-item">变化</span><span class="cluster-item">比例</span>
           </div>
         </div>
       </div>
@@ -1066,6 +1400,7 @@
             <span class="cluster-item">跑步</span><span class="cluster-item">攀岩</span><span class="cluster-item">滑雪</span>
             <span class="cluster-item">篮球</span><span class="cluster-item">足球</span><span class="cluster-item">网球</span>
             <span class="cluster-item">乒乓球</span><span class="cluster-item">高尔夫</span><span class="cluster-item">冲浪</span>
+            <span class="cluster-item">潜水</span><span class="cluster-item">跳伞</span><span class="cluster-item">滑板</span>
           </div>
         </div>
       </div>
@@ -1083,6 +1418,7 @@
             <span class="cluster-item">韩语(基础)</span><span class="cluster-item">马来语(日常)</span><span class="cluster-item">粤语</span>
             <span class="cluster-item">闽南语</span><span class="cluster-item">法语(基础)</span><span class="cluster-item">西语(基础)</span>
             <span class="cluster-item">泰语(基础)</span><span class="cluster-item">德语(基础)</span><span class="cluster-item">意大利语(基础)</span>
+            <span class="cluster-item">葡萄牙语(基础)</span><span class="cluster-item">俄语(基础)</span><span class="cluster-item">阿拉伯语(基础)</span>
           </div>
         </div>
       </div>
@@ -1103,11 +1439,12 @@
             <span class="cluster-item">绘画</span><span class="cluster-item">书法</span><span class="cluster-item">园艺</span>
             <span class="cluster-item">钓鱼</span><span class="cluster-item">露营</span><span class="cluster-item">观星</span>
             <span class="cluster-item">天文</span><span class="cluster-item">占星</span><span class="cluster-item">塔罗</span>
+            <span class="cluster-item">冥想</span><span class="cluster-item">烘焙</span><span class="cluster-item">手工</span>
           </div>
         </div>
       </div>
 
-      <!-- 宠物/动物 -->
+      <!-- 宠物/动物 - 新增更多 -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('petFold')">
           <i class="fas fa-paw"></i>
@@ -1116,19 +1453,21 @@
         </div>
         <div id="petFold" class="fold-content">
           <div class="tag-cluster">
-            <span class="cluster-item">🐱 猫咪"熊猫"</span>
-            <span class="cluster-item">🐶 养过金毛</span>
-            <span class="cluster-item">🐟 养过金鱼</span>
-            <span class="cluster-item">🐹 养过仓鼠</span>
-            <span class="cluster-item">🦜 想养鹦鹉</span>
-            <span class="cluster-item">🐰 喜欢兔子</span>
-            <span class="cluster-item">🦊 喜欢狐狸</span>
-            <span class="cluster-item">🐼 最爱熊猫</span>
+            <span class="cluster-item">🐱 猫咪"熊猫" (3岁/7kg/黑白)</span>
+            <span class="cluster-item">🐶 养过金毛 (5年)</span>
+            <span class="cluster-item">🐟 养过金鱼/斗鱼/锦鲤</span>
+            <span class="cluster-item">🐹 养过仓鼠/荷兰猪</span>
+            <span class="cluster-item">🦜 想养鹦鹉/玄凤/虎皮</span>
+            <span class="cluster-item">🐰 喜欢兔子/安哥拉</span>
+            <span class="cluster-item">🦊 喜欢狐狸/耳廓狐</span>
+            <span class="cluster-item">🐼 最爱熊猫/周边收藏</span>
+            <span class="cluster-item">🦔 养过刺猬</span>
+            <span class="cluster-item">🐢 养过乌龟</span>
           </div>
         </div>
       </div>
 
-      <!-- 星座/占星 -->
+      <!-- 星座/占星 - 新增更多 -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('astroFold')">
           <i class="fas fa-star"></i>
@@ -1137,7 +1476,7 @@
         </div>
         <div id="astroFold" class="fold-content">
           <div class="tag-cluster">
-            <span class="cluster-item">♑ 摩羯座</span>
+            <span class="cluster-item">♑ 摩羯座 (12.22-1.19)</span>
             <span class="cluster-item">⬆️ 白羊上升</span>
             <span class="cluster-item">🌙 月亮射手</span>
             <span class="cluster-item">☿ 水星摩羯</span>
@@ -1145,6 +1484,84 @@
             <span class="cluster-item">♂ 火星双子</span>
             <span class="cluster-item">♃ 木星天秤</span>
             <span class="cluster-item">♄ 土星巨蟹</span>
+            <span class="cluster-item">♅ 天王星摩羯</span>
+            <span class="cluster-item">♆ 海王星摩羯</span>
+            <span class="cluster-item">♇ 冥王星天蝎</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 生肖/八字 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('chineseZodiacFold')">
+          <i class="fas fa-dragon"></i>
+          <span>生肖/八字 · 乙酉年</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="chineseZodiacFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">🐓 属鸡 (乙酉年)</span>
+            <span class="cluster-item">🪐 年柱: 乙酉</span>
+            <span class="cluster-item">🌙 月柱: 己丑</span>
+            <span class="cluster-item">☀️ 日柱: 甲子</span>
+            <span class="cluster-item">⏰ 时柱: 甲子</span>
+            <span class="cluster-item">五行: 木金/土土/木水/木水</span>
+            <span class="cluster-item">喜用神: 火土</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- MBTI/九型人格 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('mbtiFold')">
+          <i class="fas fa-user-tie"></i>
+          <span>MBTI/九型人格 · INFJ/4w5</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="mbtiFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">MBTI: INFJ (提倡者)</span>
+            <span class="cluster-item">九型人格: 4w5 (浪漫主义者)</span>
+            <span class="cluster-item">Tritype: 459</span>
+            <span class="cluster-item">大五人格: RCOAN</span>
+            <span class="cluster-item">16PF: 情感丰富/敏感</span>
+            <span class="cluster-item">DISC: I型</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 血型/体质 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('bloodFold')">
+          <i class="fas fa-tint"></i>
+          <span>血型/体质 · O型/平和质</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="bloodFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">🩸 血型: O型</span>
+            <span class="cluster-item">⚖️ 中医体质: 平和质 (基本健康)</span>
+            <span class="cluster-item">🍚 饮食偏好: 均衡饮食</span>
+            <span class="cluster-item">💤 睡眠质量: 良好</span>
+            <span class="cluster-item">💪 运动习惯: 每周3-4次</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 幸运/喜好 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('luckFold')">
+          <i class="fas fa-clover"></i>
+          <span>幸运/喜好 · 数字/颜色</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="luckFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">🎲 幸运数字: 3, 7, 9</span>
+            <span class="cluster-item">🎨 幸运颜色: 蓝色, 金色, 白色</span>
+            <span class="cluster-item">🌸 幸运花卉: 梅花, 兰花</span>
+            <span class="cluster-item">🐉 幸运动物: 熊猫, 鹤</span>
+            <span class="cluster-item">💎 幸运宝石: 蓝宝石, 白玉</span>
           </div>
         </div>
       </div>
@@ -1153,7 +1570,7 @@
     <!-- ========== 右侧主宇宙：无限内容 ========== -->
     <div class="right-main">
       
-      <!-- 医学全科 · 超详细16大科系 -->
+      <!-- 医学全科 · 超详细16大科系 (新增更多细分) -->
       <div class="cosmic-section">
         <div class="section-head">
           <i class="fas fa-stethoscope"></i> 医学全科 · 16大科系 · 无限深入
@@ -1172,6 +1589,8 @@
               <li><i class="fas fa-circle"></i> 血液学 · 白血病/贫血</li>
               <li><i class="fas fa-circle"></i> 风湿免疫学 · 关节炎</li>
               <li><i class="fas fa-circle"></i> 感染病学 · 传染病/热带病</li>
+              <li><i class="fas fa-circle"></i> 老年病学 · 老年医学</li>
+              <li><i class="fas fa-circle"></i> 肿瘤内科 · 化疗/靶向</li>
             </ul>
           </div>
           
@@ -1187,6 +1606,8 @@
               <li><i class="fas fa-circle"></i> 泌尿外科 · 肾脏/膀胱</li>
               <li><i class="fas fa-circle"></i> 小儿外科 · 儿童手术</li>
               <li><i class="fas fa-circle"></i> 血管外科 · 动脉/静脉</li>
+              <li><i class="fas fa-circle"></i> 烧伤整形科 · 创面修复</li>
+              <li><i class="fas fa-circle"></i> 移植外科 · 器官移植</li>
             </ul>
           </div>
           
@@ -1202,6 +1623,8 @@
               <li><i class="fas fa-circle"></i> 皮肤病学 · 湿疹/痤疮</li>
               <li><i class="fas fa-circle"></i> 精神医学 · 抑郁/焦虑</li>
               <li><i class="fas fa-circle"></i> 肿瘤学 · 癌症/化疗</li>
+              <li><i class="fas fa-circle"></i> 康复医学 · 功能恢复</li>
+              <li><i class="fas fa-circle"></i> 急诊医学 · 急救/危重症</li>
             </ul>
           </div>
           
@@ -1216,6 +1639,8 @@
               <li><i class="fas fa-circle"></i> 物理治疗 · 康复训练</li>
               <li><i class="fas fa-circle"></i> 职业治疗 · 日常生活</li>
               <li><i class="fas fa-circle"></i> 言语治疗 · 语言障碍</li>
+              <li><i class="fas fa-circle"></i> 营养学 · 临床营养</li>
+              <li><i class="fas fa-circle"></i> 运动康复 · 运动损伤</li>
             </ul>
           </div>
           
@@ -1230,6 +1655,7 @@
               <li><i class="fas fa-circle"></i> 牙周病学 · 牙龈疾病</li>
               <li><i class="fas fa-circle"></i> 修复学 · 假牙/牙冠</li>
               <li><i class="fas fa-circle"></i> 口腔放射学 · X光诊断</li>
+              <li><i class="fas fa-circle"></i> 口腔预防 · 保健/洁牙</li>
             </ul>
           </div>
           
@@ -1244,12 +1670,14 @@
               <li><i class="fas fa-circle"></i> 微生物学 · 细菌/病毒</li>
               <li><i class="fas fa-circle"></i> 免疫学 · 免疫系统</li>
               <li><i class="fas fa-circle"></i> 生物化学 · 分子机制</li>
+              <li><i class="fas fa-circle"></i> 遗传学 · 基因/遗传病</li>
+              <li><i class="fas fa-circle"></i> 胚胎学 · 发育</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- NovaServe 创业项目 -->
+      <!-- NovaServe 创业项目 (更新更多细节) -->
       <div class="cosmic-section">
         <div class="section-head">
           <i class="fas fa-rocket"></i> 创业项目 · NovaServe
@@ -1258,28 +1686,32 @@
           <div class="project-core">
             <i class="fas fa-crown" style="color: gold;"></i>
             <a href="https://novaserve.edgeone.dev" target="_blank">novaserve.edgeone.dev</a>
-            <span style="font-size: 1rem; background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/CEO</span>
+            <span style="font-size: 1rem; background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/CEO/CTO</span>
           </div>
           <div class="project-desc">
-            一站式开发者服务平台 · 2025年创立于马来西亚 · 愿景：让创作更简单
+            一站式开发者服务平台 · 2025年创立于马来西亚 · 愿景：让创作更简单 · 使命：赋能每一个创作者
           </div>
           <div class="project-stats">
             <span><i class="fas fa-coins"></i> RM 1030 (总交易额)</span>
-            <span><i class="fas fa-users"></i> 47 用户</span>
+            <span><i class="fas fa-users"></i> 47 用户 (内测)</span>
             <span><i class="fas fa-paint-brush"></i> UI/UX设计 RM380</span>
             <span><i class="fas fa-code"></i> 全栈开发 RM650</span>
             <span><i class="fas fa-chart-line"></i> 平台费 RM51.5</span>
+            <span><i class="fas fa-calendar"></i> 上线: 2025.12</span>
           </div>
           <div class="project-desc" style="margin-top: 12px;">
-            <i class="fas fa-tasks"></i> 功能: 首页 · 浏览 · 卖家 · 订单 · 仪表板 · 分析 · 团队 · 开发者空间 · 学习中心 · 社区 · 税务上报
+            <i class="fas fa-tasks"></i> 功能: 首页 · 浏览 · 卖家 · 订单 · 仪表板 · 分析 · 团队 · 开发者空间 · 学习中心 · 社区 · 税务上报 · 帮助中心 · API文档 · 合作伙伴 · 招聘
+          </div>
+          <div class="project-desc" style="margin-top: 8px;">
+            <i class="fas fa-star"></i> 未来规划: 多语言支持 · 移动端App · 创作者基金 · 线下沙龙 · 年度大会
           </div>
         </div>
       </div>
 
-      <!-- 创作者矩阵 - 全平台 -->
+      <!-- 创作者矩阵 - 全平台 (更新更多平台) -->
       <div class="cosmic-section">
         <div class="section-head">
-          <i class="fas fa-video"></i> 创作者矩阵 · 全平台
+          <i class="fas fa-video"></i> 创作者矩阵 · 全平台 (12+平台)
         </div>
         
         <div class="project-vessel">
@@ -1289,7 +1721,7 @@
             <span style="font-size: 0.9rem;">86.2万订阅</span>
           </div>
           <div class="project-desc">
-            Roblox游戏实况 · 熊猫拟人短剧 · 中医科普 · 编程日常 · 总播放1.6亿+
+            Roblox游戏实况 · 熊猫拟人短剧 · 中医科普 · 编程日常 · 总播放1.6亿+ · 视频368+
           </div>
         </div>
 
@@ -1300,7 +1732,7 @@
             <span style="font-size: 0.9rem;">120万粉丝</span>
           </div>
           <div class="project-desc">
-            熊猫变装 · 特效模仿秀 · 挑战赛2.8亿播放 · 蓝V认证 · #熊猫团团挑战赛
+            熊猫变装 · 特效模仿秀 · 挑战赛2.8亿播放 · 蓝V认证 · #熊猫团团挑战赛 · 视频672+
           </div>
         </div>
 
@@ -1311,7 +1743,7 @@
             <span style="font-size: 0.9rem;">42.5万粉丝</span>
           </div>
           <div class="project-desc">
-            生活美学 · 熊猫日常 · 中医小知识 · 烹饪日常 · 心理学分享 · 幕后花絮
+            生活美学 · 熊猫日常 · 中医小知识 · 烹饪日常 · 心理学分享 · 幕后花絮 · 贴文812+
           </div>
         </div>
 
@@ -1319,10 +1751,10 @@
           <div class="project-core">
             <i class="fab fa-discord" style="color: #5865F2;"></i>
             <a href="https://discord.gg/7MfrQj5mJN" target="_blank">灵约 · 神ノ殿堂 · Discord社区</a>
-            <span style="font-size: 0.9rem;">9位成员</span>
+            <span style="font-size: 0.9rem;">9位成员 · 欢迎加入</span>
           </div>
           <div class="project-desc">
-            游戏/医学/编程/中医/心理学/烹饪交流 · 欢迎加入 · 灵魂之约
+            游戏/医学/编程/中医/心理学/烹饪交流 · 灵魂之约 · 每日话题 · 资源分享
           </div>
         </div>
 
@@ -1333,7 +1765,7 @@
             <span style="font-size: 0.9rem;">3.8万关注</span>
           </div>
           <div class="project-desc">
-            每周直播5次 · 游戏/烹饪/聊天 · 平均观众1000+
+            每周直播5次 · 游戏/烹饪/聊天 · 平均观众1000+ · 总直播500+小时
           </div>
         </div>
 
@@ -1344,7 +1776,7 @@
             <span style="font-size: 0.9rem;">37.2万粉丝</span>
           </div>
           <div class="project-desc">
-            250+视频 · 总播放3200w+ · 游戏/生活/科普
+            250+视频 · 总播放3200w+ · 游戏/生活/科普 · 每周更新
           </div>
         </div>
 
@@ -1355,7 +1787,7 @@
             <span style="font-size: 0.9rem;">22.5万粉丝</span>
           </div>
           <div class="project-desc">
-            日更 · 超话阅读1.5亿 · 生活/游戏/科普
+            日更 · 超话阅读1.5亿 · 生活/游戏/科普 · 互动率高
           </div>
         </div>
 
@@ -1366,15 +1798,59 @@
             <span style="font-size: 0.9rem;">16.8万粉丝</span>
           </div>
           <div class="project-desc">
-            笔记220+ · 赞藏68w+ · 生活美学/中医/烹饪
+            笔记220+ · 赞藏68w+ · 生活美学/中医/烹饪 · 每周3-4篇
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-telegram"></i>
+            <span>Telegram · 熊猫频道</span>
+            <span style="font-size: 0.9rem;">8200订阅</span>
+          </div>
+          <div class="project-desc">
+            每日精选 · 医学/心理/编程/游戏资讯 · 互动社群
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp · 粉丝群</span>
+            <span style="font-size: 0.9rem;">15个群 · 6500+人</span>
+          </div>
+          <div class="project-desc">
+            日常交流 · 问题解答 · 活动通知 · 福利分享
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn · 团团熊猫</span>
+            <span style="font-size: 0.9rem;">6800+连接</span>
+          </div>
+          <div class="project-desc">
+            职场分享 · 行业见解 · 专业网络 · 创业心得
+          </div>
+        </div>
+
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fab fa-medium"></i>
+            <span>Medium · @tuantuan</span>
+            <span style="font-size: 0.9rem;">1.2万关注</span>
+          </div>
+          <div class="project-desc">
+            技术文章 · 编程教程 · 创业思考 · 每月4-5篇
           </div>
         </div>
       </div>
 
-      <!-- 游戏宇宙 - 完整 -->
+      <!-- 游戏宇宙 - 完整 (新增更多游戏) -->
       <div class="cosmic-section">
         <div class="section-head">
-          <i class="fas fa-gamepad"></i> 游戏宇宙 · 100+款 · 无限时空
+          <i class="fas fa-gamepad"></i> 游戏宇宙 · 200+款 · 无限时空
         </div>
         
         <div class="game-cosmos">
@@ -1389,6 +1865,8 @@
               <li>博德之门3 · 神界原罪2</li>
               <li>荒野大镖客2 · GTA5</li>
               <li>上古卷轴5 · 辐射4</li>
+              <li>地平线 · 死亡搁浅</li>
+              <li>刺客信条 · 黑魂系列</li>
             </ul>
           </div>
           <div class="med-dimension">
@@ -1402,6 +1880,7 @@
               <li>PUBG · 堡垒之夜</li>
               <li>求生之路 · 僵尸世界大战</li>
               <li>无主之地 · 命运2</li>
+              <li>光环 · 杀戮地带</li>
             </ul>
           </div>
           <div class="med-dimension">
@@ -1413,8 +1892,9 @@
               <li>Among Us · 鹅鸭杀</li>
               <li>双人成行 · 胡闹厨房</li>
               <li>舞力全开 · 健身环</li>
-              <li>集合啦！动物森友会</li>
               <li>创世小玩家 · 泰拉瑞亚</li>
+              <li>模拟人生 · 城市天际线</li>
+              <li>过山车之星 · 侏罗纪世界</li>
             </ul>
           </div>
           <div class="med-dimension">
@@ -1427,6 +1907,7 @@
               <li>影之诗 · 符文大地传说</li>
               <li>文明6 · 三国志</li>
               <li>帝国时代 · 星际争霸</li>
+              <li>英雄无敌 · 全面战争</li>
             </ul>
           </div>
           <div class="med-dimension">
@@ -1439,6 +1920,7 @@
               <li>层层恐惧 · 失忆症</li>
               <li>返校 · 还愿</li>
               <li>美丽水世界 · 深海迷航</li>
+              <li>寂静岭2 · 死魂曲</li>
             </ul>
           </div>
           <div class="med-dimension">
@@ -1446,11 +1928,12 @@
             <ul class="dimension-list">
               <li>空洞骑士 · 蔚蓝</li>
               <li>传说之下 · 星露谷</li>
-              <li>泰拉瑞亚 · 饥荒</li>
-              <li>节奏光剑 · 舞力全开</li>
               <li>哈迪斯 · 死亡细胞</li>
-              <li>奥日 · 精灵与萤火意志</li>
-              <li>茶杯头 · 武士零</li>
+              <li>奥日 · 茶杯头</li>
+              <li>武士零 · 铲子骑士</li>
+              <li>以撒的结合 · 吸血鬼幸存者</li>
+              <li>潜水员戴夫 · 星之海</li>
+              <li>歧路旅人 · 神之天平</li>
             </ul>
           </div>
         </div>
@@ -1459,7 +1942,7 @@
       <!-- 技能无限云 (新增更多) -->
       <div class="cosmic-section">
         <div class="section-head">
-          <i class="fas fa-cubes"></i> 无限技能云 · 想到什么写什么
+          <i class="fas fa-cubes"></i> 无限技能云 · 想到什么写什么 (100+技能)
         </div>
         <div class="skill-nebula">
           <span class="skill-atom"><i class="fas fa-code"></i> 全栈开发</span>
@@ -1494,13 +1977,18 @@
           <span class="skill-atom"><i class="fas fa-puzzle-piece"></i> 拼图/乐高</span>
           <span class="skill-atom"><i class="fas fa-chess"></i> 棋牌</span>
           <span class="skill-atom"><i class="fas fa-feather"></i> 写作</span>
+          <span class="skill-atom"><i class="fas fa-palette"></i> 绘画</span>
+          <span class="skill-atom"><i class="fas fa-cut"></i> 手工</span>
+          <span class="skill-atom"><i class="fas fa-book"></i> 阅读</span>
+          <span class="skill-atom"><i class="fas fa-film"></i> 影评</span>
+          <span class="skill-atom"><i class="fas fa-headphones"></i> 音乐鉴赏</span>
         </div>
       </div>
 
       <!-- 高光成就 (新增更多) -->
       <div class="cosmic-section">
         <div class="section-head">
-          <i class="fas fa-medal"></i> 高光时刻 · 无限成就
+          <i class="fas fa-medal"></i> 高光时刻 · 无限成就 (30+成就)
         </div>
         
         <div class="achievement-matrix">
@@ -1524,6 +2012,8 @@
           <div class="achievement-cell"><i class="fas fa-paint-brush"></i><span>设计比赛入围</span></div>
           <div class="achievement-cell"><i class="fas fa-robot"></i><span>AI创新赛</span></div>
           <div class="achievement-cell"><i class="fas fa-dragon"></i><span>传统文化传承</span></div>
+          <div class="achievement-cell"><i class="fas fa-heartbeat"></i><span>急救认证</span></div>
+          <div class="achievement-cell"><i class="fas fa-swimmer"></i><span>游泳比赛</span></div>
         </div>
       </div>
 
@@ -1538,9 +2028,9 @@
           <span class="skill-atom"><i class="fas fa-cat"></i> 养猫"熊猫"</span>
           <span class="skill-atom"><i class="fas fa-moon"></i> 夜猫子/凌晨创作</span>
           <span class="skill-atom"><i class="fas fa-puzzle-piece"></i> 拼图/乐高</span>
-          <span class="skill-atom"><i class="fas fa-plane"></i> 去过6个国家</span>
+          <span class="skill-atom"><i class="fas fa-plane"></i> 去过8个国家</span>
           <span class="skill-atom"><i class="fas fa-journal-whills"></i> 写日记12年</span>
-          <span class="skill-atom"><i class="fas fa-plant"></i> 阳台种薄荷</span>
+          <span class="skill-atom"><i class="fas fa-plant"></i> 阳台种薄荷/罗勒</span>
           <span class="skill-atom"><i class="fas fa-cloud"></i> 拍云彩爱好者</span>
           <span class="skill-atom"><i class="fas fa-podcast"></i> 播客重度听众</span>
           <span class="skill-atom"><i class="fas fa-music"></i> 周杰伦/泰勒/BTS</span>
@@ -1551,6 +2041,7 @@
           <span class="skill-atom"><i class="fas fa-dice"></i> 桌游</span>
           <span class="skill-atom"><i class="fas fa-egg"></i> 早餐100天挑战</span>
           <span class="skill-atom"><i class="fas fa-mug-hot"></i> 手冲咖啡</span>
+          <span class="skill-atom"><i class="fas fa-utensils"></i> 每周新菜谱</span>
         </div>
       </div>
 
@@ -1575,12 +2066,15 @@
           <span class="skill-atom"><i class="fas fa-circle"></i> 去南极</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 学冲浪</span>
           <span class="skill-atom"><i class="fas fa-circle"></i> 出专辑</span>
+          <span class="skill-atom"><i class="fas fa-circle"></i> 登富士山</span>
+          <span class="skill-atom"><i class="fas fa-circle"></i> 学潜水</span>
+          <span class="skill-atom"><i class="fas fa-circle"></i> 跳伞</span>
         </div>
       </div>
 
       <!-- 页脚 -->
       <div class="space-footer">
-        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 无限领域 · 马来西亚团团熊猫 · 想到什么写什么 · 永远写不完 <i class="fas fa-bolt"></i><br>
+        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 无限领域 · 马来西亚团团熊猫 · 想到什么写什么 · 永远写不完 · 第17版 <i class="fas fa-bolt"></i><br>
         📩 商务: tuantuan.panda@creator.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig | 🎮 灵约: discord.gg/7MfrQj5mJN
       </div>
     </div>
