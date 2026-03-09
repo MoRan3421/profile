@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🐼 团团熊猫 · 灵约轻量化 · 81英雄 · 宇宙终极档案 · 第25版</title>
+  <title>🐼 团团熊猫 · 全宇宙最完整档案 · 医学全科 · 无限领域 · 第26版</title>
   <!-- 使用轻量级 Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <style>
@@ -12,7 +12,7 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+      font-family: 'Segoe UI', Roboto, 'Microsoft YaHei', system-ui, sans-serif;
     }
 
     body {
@@ -23,18 +23,16 @@
       justify-content: center;
     }
 
-    /* 主容器 - 极简设计保证流畅 */
     .cosmic-container {
-      max-width: 1800px;
+      max-width: 2000px;
       width: 100%;
-      background: rgba(8, 8, 20, 0.95);
+      background: rgba(8, 8, 20, 0.96);
       border-radius: 40px;
       box-shadow: 0 20px 40px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,180,0,0.2);
       padding: 25px;
       backdrop-filter: blur(8px);
     }
 
-    /* === 主网格布局 === */
     .master-grid {
       display: grid;
       grid-template-columns: 1fr 2.5fr;
@@ -46,10 +44,9 @@
       background: rgba(10, 10, 25, 0.9);
       border-radius: 35px;
       padding: 25px 20px;
-      border: 1px solid rgba(255, 170, 0, 0.25);
+      border: 1px solid rgba(255,170,0,0.25);
     }
 
-    /* 头像区 */
     .avatar-core {
       text-align: center;
       margin-bottom: 25px;
@@ -94,7 +91,7 @@
       margin-bottom: 20px;
     }
 
-    /* 社交网格 - 8x6 布局 */
+    /* 社交网格 */
     .social-matrix {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -121,12 +118,6 @@
       transform: translateY(-3px);
     }
 
-    .social-node span {
-      font-size: 0.8rem;
-      margin-left: 6px;
-    }
-
-    /* 联系卡片 */
     .contact-card {
       display: flex;
       align-items: center;
@@ -152,7 +143,7 @@
       font-size: 1.3rem;
     }
 
-    /* 可折叠宇宙 - 左侧无限展开 */
+    /* 可折叠宇宙 */
     .foldable-universe {
       margin-bottom: 12px;
     }
@@ -175,11 +166,6 @@
       font-size: 1.3rem;
     }
 
-    .fold-trigger i:last-child {
-      margin-left: auto;
-      transition: transform 0.2s;
-    }
-
     .fold-content {
       max-height: 0;
       overflow: hidden;
@@ -190,7 +176,7 @@
     }
 
     .fold-content.active {
-      max-height: 600px;
+      max-height: 2000px;
       overflow-y: auto;
       padding: 18px;
     }
@@ -208,40 +194,6 @@
       padding: 6px 16px;
       border-radius: 40px;
       font-size: 0.9rem;
-    }
-
-    /* 文凭卡片样式 */
-    .certificate-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-      margin-top: 10px;
-    }
-
-    .certificate-item {
-      background: rgba(255,215,0,0.08);
-      border: 1px solid rgba(255,200,0,0.3);
-      border-radius: 16px;
-      padding: 12px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .certificate-item i {
-      font-size: 2rem;
-      color: #ffaa33;
-    }
-
-    .certificate-info h4 {
-      color: #ffdb8e;
-      font-size: 1rem;
-      margin-bottom: 4px;
-    }
-
-    .certificate-info p {
-      color: #aaa;
-      font-size: 0.85rem;
     }
 
     /* ========== 右侧主宇宙 ========== */
@@ -274,8 +226,8 @@
       color: #ffaa33;
     }
 
-    /* 医学全科 - 无限网格 */
-    .med-hypergrid {
+    /* 网格通用 */
+    .med-hypergrid, .game-cosmos, .cert-grid, .lang-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 20px;
@@ -303,7 +255,7 @@
 
     .dimension-list li {
       color: #ddd;
-      padding: 7px 0;
+      padding: 5px 0;
       border-bottom: 1px solid rgba(255,255,255,0.05);
       display: flex;
       align-items: center;
@@ -311,12 +263,6 @@
       font-size: 0.95rem;
     }
 
-    .dimension-list i {
-      color: #ffaa33;
-      font-size: 0.7rem;
-    }
-
-    /* 项目卡片 */
     .project-vessel {
       background: rgba(15, 15, 35, 0.8);
       border-radius: 25px;
@@ -333,6 +279,7 @@
       font-weight: 600;
       color: #ffdb8e;
       margin-bottom: 12px;
+      flex-wrap: wrap;
     }
 
     .project-core a {
@@ -343,20 +290,10 @@
 
     .project-desc {
       color: #ccc;
-      margin-left: 40px;
+      margin-left: 20px;
       line-height: 1.7;
     }
 
-    .project-stats {
-      display: flex;
-      gap: 25px;
-      margin-left: 40px;
-      margin-top: 15px;
-      color: #ffdb8e;
-      flex-wrap: wrap;
-    }
-
-    /* 技能云 */
     .skill-nebula {
       display: flex;
       flex-wrap: wrap;
@@ -370,128 +307,8 @@
       padding: 8px 20px;
       border-radius: 50px;
       font-size: 0.95rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
     }
 
-    /* 成就矩阵 */
-    .achievement-matrix {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 15px;
-    }
-
-    .achievement-cell {
-      background: rgba(15, 15, 35, 0.8);
-      border-radius: 20px;
-      padding: 15px;
-      text-align: center;
-      border: 1px solid rgba(255,170,0,0.15);
-    }
-
-    .achievement-cell i {
-      font-size: 2.2rem;
-      color: #ffaa33;
-      margin-bottom: 8px;
-    }
-
-    .achievement-cell span {
-      color: #ffdb8e;
-      font-size: 0.9rem;
-    }
-
-    /* 游戏宇宙网格 */
-    .game-cosmos {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    /* 职业选手卡片 */
-    .pro-card {
-      background: rgba(255,215,0,0.1);
-      border: 2px solid #ffaa33;
-      border-radius: 25px;
-      padding: 20px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .pro-card i {
-      font-size: 3rem;
-      color: #ffaa33;
-    }
-
-    .pro-info h3 {
-      color: #ffdb8e;
-      font-size: 1.5rem;
-      margin-bottom: 5px;
-    }
-
-    .pro-info p {
-      color: #ccc;
-    }
-
-    /* 性格特质卡片 */
-    .trait-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 15px;
-    }
-
-    .trait-item {
-      background: rgba(20, 20, 40, 0.8);
-      border-radius: 20px;
-      padding: 15px;
-      text-align: center;
-      border: 1px solid #ffaa33;
-    }
-
-    .trait-item i {
-      font-size: 2rem;
-      color: #ffaa33;
-      margin-bottom: 8px;
-    }
-
-    .trait-item h4 {
-      color: #ffdb8e;
-      margin-bottom: 5px;
-    }
-
-    .trait-item p {
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-
-    /* 性格详细列表 */
-    .personality-list {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
-    }
-
-    .personality-item {
-      background: rgba(30,30,50,0.8);
-      border-radius: 18px;
-      padding: 15px;
-      border-left: 5px solid #ffaa33;
-    }
-
-    .personality-item h4 {
-      color: #ffdb8e;
-      margin-bottom: 8px;
-      font-size: 1.2rem;
-    }
-
-    .personality-item p {
-      color: #ccc;
-      line-height: 1.6;
-    }
-
-    /* 页脚 */
     .space-footer {
       text-align: center;
       color: #ffdb8e;
@@ -500,15 +317,9 @@
       font-size: 1.1rem;
     }
 
-    /* 响应式 */
     @media (max-width: 1400px) {
       .master-grid { grid-template-columns: 1fr; }
-      .med-hypergrid { grid-template-columns: 1fr; }
-      .game-cosmos { grid-template-columns: 1fr; }
-      .achievement-matrix { grid-template-columns: repeat(2, 1fr); }
-      .certificate-grid { grid-template-columns: 1fr; }
-      .trait-grid { grid-template-columns: 1fr; }
-      .personality-list { grid-template-columns: 1fr; }
+      .med-hypergrid, .game-cosmos, .cert-grid, .lang-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -519,26 +330,23 @@
     <!-- ========== 左侧宇宙：个人核心 ========== -->
     <div class="left-void">
       <div class="avatar-core">
-        <div class="avatar-ring">
-          <div class="avatar-pic"></div>
-        </div>
+        <div class="avatar-ring"><div class="avatar-pic"></div></div>
         <h1 class="name-title">🐼 团团熊猫 🇲🇾</h1>
-        <div class="identity-badge">
-          <i class="fas fa-crown"></i> 20岁 · 马来西亚 · 医学全科 · 无限领域 · 职业选手 · 80+文凭 · 20+语言 · 灵约创始人
-        </div>
+        <div class="identity-badge"><i class="fas fa-crown"></i> 20岁 · 马来西亚 · 医学全科 · 无限领域 · 灵约创始人 · 职业选手 · 80+文凭 · 25+语言</div>
       </div>
 
-      <!-- 社交链接 - 全部真实链接 + 灵约双网址 -->
+      <!-- 社交链接 - 全部真实链接 -->
       <div class="social-matrix">
         <a href="https://www.youtube.com/@robloxgamerofficer7145" target="_blank" class="social-node"><i class="fab fa-youtube"></i></a>
         <a href="https://www.tiktok.com/@moran8573" target="_blank" class="social-node"><i class="fab fa-tiktok"></i></a>
         <a href="https://www.instagram.com/tuantuanxiongmao/" target="_blank" class="social-node"><i class="fab fa-instagram"></i></a>
         <a href="https://novaserve.edgeone.dev" target="_blank" class="social-node"><i class="fas fa-globe"></i><span>Nova</span></a>
-        <a href="https://lingyue.edgeone.dev/" target="_blank" class="social-node"><i class="fas fa-dragon"></i><span>灵约轻量</span></a>
-        <a href="https://lingyue-lmodb1zjvy.edgeone.dev/" target="_blank" class="social-node"><i class="fas fa-dragon"></i><span>灵约完全</span></a>
+        <a href="https://lingyue.edgeone.dev/" target="_blank" class="social-node"><i class="fas fa-dragon"></i><span>灵约轻</span></a>
+        <a href="https://lingyue-lmodb1zjvy.edgeone.dev/" target="_blank" class="social-node"><i class="fas fa-dragon"></i><span>灵约全</span></a>
         <a href="https://discord.gg/7MfrQj5mJN" target="_blank" class="social-node"><i class="fab fa-discord"></i><span>灵约</span></a>
         <a href="#" onclick="alert('微信号: a12tianbig')" class="social-node"><i class="fab fa-weixin"></i></a>
-        <a href="#" onclick="alert('WhatsApp/电话: 01156649657')" class="social-node"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" onclick="alert('WhatsApp: 01156649657')" class="social-node"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" onclick="alert('Gmail: tuantuanxiongmaoyouxizhubo@gmail.com')" class="social-node"><i class="fas fa-envelope"></i></a>
         <a href="#" class="social-node"><i class="fab fa-github"></i></a>
         <a href="#" class="social-node"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-node"><i class="fab fa-twitch"></i></a>
@@ -581,159 +389,230 @@
         <a href="#" class="social-node"><i class="fab fa-500px"></i></a>
       </div>
 
-      <!-- 联系卡片 - 更新Gmail -->
-      <div class="contact-card" onclick="alert('微信号: a12tianbig')">
-        <i class="fab fa-weixin"></i>
-        <span>微信: a12tianbig</span>
-      </div>
-      <div class="contact-card" onclick="alert('WhatsApp/电话: 01156649657')">
-        <i class="fab fa-whatsapp"></i>
-        <span>WhatsApp: 01156649657</span>
-      </div>
-      <div class="contact-card" onclick="alert('Gmail: tuantuanxiongmaoyouxizhubo@gmail.com')">
-        <i class="fas fa-envelope"></i>
-        <span>Gmail: 团团熊猫游戏主播</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-map-pin"></i>
-        <span>马来西亚 · 吉隆坡 · 雪兰莪 · 八打灵再也</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-birthday-cake"></i>
-        <span>2005.01.12 · 20岁 · 摩羯座 · 属鸡 · 乙酉年</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-passport"></i>
-        <span>护照: A12345678 · MyKad: 050112-XX-XXXX</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-graduation-cap"></i>
-        <span>拉曼大学 · 计算机科学 · 心理学辅修</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-car"></i>
-        <span>驾照: D · 车: Myvi 熊猫特别版</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-ruler"></i>
-        <span>身高182cm · 体重72kg · 血型O</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-genderless"></i>
-        <span>性别: 未知 · 非二元 · 性别酷儿</span>
-      </div>
-      <div class="contact-card">
-        <i class="fas fa-tree"></i>
-        <span>祖籍: 广东 · 客家 · 梅州/惠州</span>
-      </div>
+      <!-- 联系卡片 - 全部真实信息 -->
+      <div class="contact-card" onclick="alert('微信号: a12tianbig')"><i class="fab fa-weixin"></i><span>微信: a12tianbig</span></div>
+      <div class="contact-card" onclick="alert('WhatsApp/电话: 01156649657')"><i class="fab fa-whatsapp"></i><span>WhatsApp: 01156649657</span></div>
+      <div class="contact-card" onclick="alert('Gmail: tuantuanxiongmaoyouxizhubo@gmail.com')"><i class="fas fa-envelope"></i><span>Gmail: 团团熊猫游戏主播</span></div>
+      <div class="contact-card"><i class="fas fa-map-pin"></i><span>马来西亚 · 吉隆坡 · 雪兰莪 · 八打灵再也</span></div>
+      <div class="contact-card"><i class="fas fa-birthday-cake"></i><span>2005.01.12 · 20岁 · 摩羯座 · 属鸡 · 乙酉年</span></div>
+      <div class="contact-card"><i class="fas fa-passport"></i><span>护照: A12345678 · MyKad: 050112-XX-XXXX</span></div>
+      <div class="contact-card"><i class="fas fa-graduation-cap"></i><span>拉曼大学 · 计算机科学 · 心理学辅修 · 中医社团</span></div>
+      <div class="contact-card"><i class="fas fa-car"></i><span>驾照: D · 车: Myvi 熊猫特别版</span></div>
+      <div class="contact-card"><i class="fas fa-ruler"></i><span>身高182cm · 体重72kg · 血型O</span></div>
+      <div class="contact-card"><i class="fas fa-genderless"></i><span>性别: 未知 · 非二元 · 性别酷儿</span></div>
+      <div class="contact-card"><i class="fas fa-tree"></i><span>祖籍: 广东 · 客家 · 梅州/惠州</span></div>
+      <div class="contact-card"><i class="fas fa-tshirt"></i><span>穿衣风格: 休闲/街头/简约/日系/韩系/复古/运动/工装/机能/山系</span></div>
+      <div class="contact-card"><i class="fas fa-heartbeat"></i><span>健康状况: 良好 · 献血5次 · 器官捐献志愿者</span></div>
+      <div class="contact-card"><i class="fas fa-moon"></i><span>睡眠: 夜猫子 · 3点睡11点起</span></div>
 
-      <!-- 灵约项目专区 - 更新双版本 -->
+      <!-- 灵约项目 -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('lingyueFold')">
-          <i class="fas fa-dragon"></i>
-          <span>⚔️ 灵约 · 双版本 · 81英雄 · 创始人</span>
-          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-dragon"></i><span>⚔️ 灵约 · 双版本 · 81英雄 · 创始人</span><i class="fas fa-chevron-down"></i>
         </div>
         <div id="lingyueFold" class="fold-content">
           <div class="tag-cluster">
             <span class="cluster-item">轻量化版: lingyue.edgeone.dev</span>
             <span class="cluster-item">完全体版: lingyue-lmodb1zjvy.edgeone.dev</span>
-            <span class="cluster-item">英雄: 81位 · 苍岚/云梦/灵漪等</span>
-            <span class="cluster-item">四大原力: 业火/寒霜/雷鸣/灵木</span>
-            <span class="cluster-item">七阶皮肤: 初灵→通灵→业火→寒霜→雷鸣→灵木→万灵</span>
-            <span class="cluster-item">灵宠: 36天罡 · 烛龙/灵狐/玄龟/冥鸦等</span>
-            <span class="cluster-item">坐骑: 72地煞 · 应龙/天马/祥云/青鸾/鲲鹏/穷奇</span>
-            <span class="cluster-item">符文: 108种 · 业火/寒霜/雷鸣/灵木/太阴/太阳/贪狼/巨门</span>
-            <span class="cluster-item">铭文: 72种 · 破军/不动/通灵/长生/迅雷/踏云/破甲/不屈</span>
-            <span class="cluster-item">十大神器: 轩辕剑/盘古斧/炼妖壶/东皇钟/昆仑镜/昊天塔</span>
-            <span class="cluster-item">转职: 九系 · 剑仙/法尊/战圣/灵师/影刺/御者</span>
-            <span class="cluster-item">社交: 结婚·情缘 · 师徒 · 宗门战 · 家园洞府</span>
-            <span class="cluster-item">成就/排行榜/录像/直播/赛事系统</span>
+            <span class="cluster-item">英雄: 81位 · 苍岚/云梦/灵漪/重明/幽螭/玄泽/祸斗/毕方/月镰/白泽/瑶姬/霸下 +69</span>
+            <span class="cluster-item">四大原力: 业火(真伤) · 寒霜(减速) · 雷鸣(攻速) · 灵木(回复)</span>
+            <span class="cluster-item">七阶皮肤: 初灵(默认) → 通灵(稀有) → 业火(史诗) → 寒霜(传说) → 雷鸣(神话) → 灵木(至尊) → 万灵(七阶)</span>
+            <span class="cluster-item">灵宠(36天罡): 烛龙/灵狐/玄龟/冥鸦/月猫/祸斗/金鹏/鲲/幽蛛/腾蛇</span>
+            <span class="cluster-item">坐骑(72地煞): 应龙/天马/祥云/青鸾/鲲鹏/穷奇/金翅大鹏/谛听/麒麟/白泽</span>
+            <span class="cluster-item">符文(108种): 业火/寒霜/雷鸣/灵木/太阴/太阳/贪狼/巨门/禄存/文曲/廉贞/武曲</span>
+            <span class="cluster-item">铭文(72种): 破军/不动/通灵/长生/迅雷/踏云/破甲/不屈/龙威/羽化</span>
+            <span class="cluster-item">十大神器: 轩辕剑/盘古斧/炼妖壶/东皇钟/昆仑镜/昊天塔/伏羲琴/神农鼎/崆峒印/女娲石</span>
+            <span class="cluster-item">转职九系: 剑仙/法尊/战圣/灵师/影刺/御者/巫祝/机关/龙将</span>
+            <span class="cluster-item">结婚情缘: 道侣/双修/情缘技/夫妻副本/结婚礼堂</span>
+            <span class="cluster-item">师徒系统: 拜师/收徒/师徒技/出师/师门任务</span>
+            <span class="cluster-item">宗门战: 百宗大战/灵脉争夺/宗门商店/宗门技能/宗门BOSS</span>
+            <span class="cluster-item">家园洞府: 灵田/丹房/器室/闭关/灵兽园/仙草园</span>
+            <span class="cluster-item">成就系统: 战斗/收集/社交/隐藏/称号/勋章</span>
+            <span class="cluster-item">排行榜: 巅峰/英雄/宗门/财富/战力/皮肤</span>
+            <span class="cluster-item">录像系统: 回放/精彩时刻/大神观战/战术分析</span>
+            <span class="cluster-item">直播系统: 官方直播/大神直播/赛事直播/教学直播</span>
+            <span class="cluster-item">灵魂十段: 淬灵Ⅰ-Ⅲ → 锻魂Ⅳ-Ⅵ → 通幽Ⅶ-Ⅸ → 羽化Ⅹ-Ⅻ → 登神XIII-XV → 万灵XVI+</span>
             <span class="cluster-item">渡劫六境: 金丹→元婴→化神→渡劫→大乘→飞升</span>
+            <span class="cluster-item">飞升奖励: 仙器/仙宠/仙羽/仙号/仙府</span>
+            <span class="cluster-item">战令系统: 初灵战令/觉醒战令/赛季战令</span>
+            <span class="cluster-item">无量灵签: 天命池(七阶皮肤2%/70保底) · 觉醒池(神器3%/50保底) · 无量池(万灵皮肤1.5%/90保底)</span>
+            <span class="cluster-item">周边商城: 手办/服装/设定集/灵宠公仔/宗门令/仙器模型</span>
           </div>
         </div>
       </div>
 
-      <!-- 语言能力专区 -->
+      <!-- 语言能力 - 25+种 -->
       <div class="foldable-universe">
-        <div class="fold-trigger" onclick="toggleFold('languageFold')">
-          <i class="fas fa-language"></i>
-          <span>🗣️ 语言能力 · 20+种 · 点击展开</span>
-          <i class="fas fa-chevron-down"></i>
+        <div class="fold-trigger" onclick="toggleFold('langFold')">
+          <i class="fas fa-language"></i><span>🗣️ 语言能力 · 25+种</span><i class="fas fa-chevron-down"></i>
         </div>
-        <div id="languageFold" class="fold-content">
+        <div id="langFold" class="fold-content">
           <div class="tag-cluster">
-            <span class="cluster-item">🇨🇳 华语 (母语)</span>
-            <span class="cluster-item">🇬🇧 英语 (雅思8.0)</span>
-            <span class="cluster-item">🇲🇾 马来语 (日常)</span>
-            <span class="cluster-item">🇯🇵 日语 (N2)</span>
-            <span class="cluster-item">🇰🇷 韩语 (TOPIK2)</span>
-            <span class="cluster-item">🇪🇸 西班牙语 (A2)</span>
-            <span class="cluster-item">🇫🇷 法语 (A2)</span>
-            <span class="cluster-item">🇩🇪 德语 (A2)</span>
-            <span class="cluster-item">🇮🇹 意大利语 (A1)</span>
-            <span class="cluster-item">🇷🇺 俄语 (A1)</span>
-            <span class="cluster-item">🇹🇭 泰语 (日常)</span>
-            <span class="cluster-item">🇻🇳 越南语 (基础)</span>
-            <span class="cluster-item">🇵🇹 葡萄牙语 (A1)</span>
-            <span class="cluster-item">🇳🇱 荷兰语 (A1)</span>
-            <span class="cluster-item">🇸🇪 瑞典语 (A1)</span>
-            <span class="cluster-item">🇬🇷 希腊语 (基础)</span>
-            <span class="cluster-item">🇹🇷 土耳其语 (基础)</span>
-            <span class="cluster-item">🇮🇳 印地语 (基础)</span>
-            <span class="cluster-item">🇦🇪 阿拉伯语 (基础)</span>
-            <span class="cluster-item">🇮🇩 印尼语 (基础)</span>
-            <span class="cluster-item">🇭🇰 粤语 (流利)</span>
-            <span class="cluster-item">🇨🇳 客家话 (母语)</span>
-            <span class="cluster-item">🇨🇳 闽南语 (日常)</span>
-            <span class="cluster-item">🇨🇳 潮州话 (基础)</span>
-            <span class="cluster-item">🇨🇳 海南话 (基础)</span>
+            <span class="cluster-item">🇨🇳 华语 (母语/普通话/简体/繁体)</span>
+            <span class="cluster-item">🇭🇰 粤语 (流利/广东话/香港话)</span>
+            <span class="cluster-item">🇨🇳 客家话 (母语/梅县腔/惠阳腔)</span>
+            <span class="cluster-item">🇬🇧 英语 (雅思8.0/流利/学术/商务)</span>
+            <span class="cluster-item">🇲🇾 马来语 (日常会话/基础)</span>
+            <span class="cluster-item">🇯🇵 日语 (JLPT N2/日常/动漫/阅读)</span>
+            <span class="cluster-item">🇰🇷 韩语 (TOPIK 2/韩剧/K-pop)</span>
+            <span class="cluster-item">🇪🇸 西班牙语 (DELE A2/基础会话)</span>
+            <span class="cluster-item">🇫🇷 法语 (DELF A2/基础/旅游)</span>
+            <span class="cluster-item">🇩🇪 德语 (A2/基础/阅读)</span>
+            <span class="cluster-item">🇮🇹 意大利语 (A1/基础/音乐术语)</span>
+            <span class="cluster-item">🇷🇺 俄语 (A1/基础/字母)</span>
+            <span class="cluster-item">🇹🇭 泰语 (日常/点菜/购物)</span>
+            <span class="cluster-item">🇻🇳 越南语 (基础/日常)</span>
+            <span class="cluster-item">🇵🇹 葡萄牙语 (A1/基础/巴西)</span>
+            <span class="cluster-item">🇳🇱 荷兰语 (A1/基础)</span>
+            <span class="cluster-item">🇸🇪 瑞典语 (A1/基础)</span>
+            <span class="cluster-item">🇬🇷 希腊语 (基础/字母)</span>
+            <span class="cluster-item">🇹🇷 土耳其语 (基础/日常)</span>
+            <span class="cluster-item">🇮🇳 印地语 (基础/那摩斯戴)</span>
+            <span class="cluster-item">🇦🇪 阿拉伯语 (基础/字母/问候)</span>
+            <span class="cluster-item">🇮🇩 印尼语 (基础/与马来语相通)</span>
+            <span class="cluster-item">🇨🇳 闽南语 (日常/福建话/台语)</span>
+            <span class="cluster-item">🇨🇳 潮州话 (基础/潮汕方言)</span>
+            <span class="cluster-item">🇨🇳 海南话 (基础/琼语)</span>
           </div>
         </div>
       </div>
 
-      <!-- 文凭/证书专区 -->
+      <!-- 文凭/证书 - 80+项 -->
       <div class="foldable-universe">
-        <div class="fold-trigger" onclick="toggleFold('certificateFold')">
-          <i class="fas fa-certificate"></i>
-          <span>🎓 文凭/证书 · 80+项 · 点击展开</span>
-          <i class="fas fa-chevron-down"></i>
+        <div class="fold-trigger" onclick="toggleFold('certFold')">
+          <i class="fas fa-certificate"></i><span>🎓 文凭/证书 · 80+项</span><i class="fas fa-chevron-down"></i>
         </div>
-        <div id="certificateFold" class="fold-content">
-          <div class="certificate-grid">
-            <div class="certificate-item"><i class="fas fa-graduation-cap"></i><div class="certificate-info"><h4>计算机科学学士</h4><p>拉曼大学 · 2023-2027</p></div></div>
-            <div class="certificate-item"><i class="fas fa-leaf"></i><div class="certificate-info"><h4>中医针灸专业认证</h4><p>马来西亚中医总会 · 2025</p></div></div>
-            <div class="certificate-item"><i class="fas fa-brain"></i><div class="certificate-info"><h4>心理学辅修证书</h4><p>拉曼大学 · 2026</p></div></div>
-            <div class="certificate-item"><i class="fas fa-code"></i><div class="certificate-info"><h4>全栈开发认证</h4><p>Google Developer · 2024</p></div></div>
-            <div class="certificate-item"><i class="fas fa-cloud"></i><div class="certificate-info"><h4>AWS云端从业者</h4><p>AWS Certification · 2025</p></div></div>
-            <div class="certificate-item"><i class="fas fa-language"></i><div class="certificate-info"><h4>雅思7.5证书</h4><p>British Council · 2024</p></div></div>
-            <div class="certificate-item"><i class="fas fa-heartbeat"></i><div class="certificate-info"><h4>急救/CPR认证</h4><p>马来西亚红新月会 · 2025</p></div></div>
-            <div class="certificate-item"><i class="fas fa-robot"></i><div class="certificate-info"><h4>AI/ML 专业证书</h4><p>DeepLearning.AI · 2025</p></div></div>
+        <div id="certFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">计算机科学学士 (拉曼大学)</span>
+            <span class="cluster-item">心理学辅修 (拉曼大学)</span>
+            <span class="cluster-item">中医针灸专业认证 (中医总会)</span>
+            <span class="cluster-item">全栈开发认证 (Google)</span>
+            <span class="cluster-item">AWS云端从业者 (AWS)</span>
+            <span class="cluster-item">雅思7.5 (British Council)</span>
+            <span class="cluster-item">急救/CPR认证 (红新月会)</span>
+            <span class="cluster-item">AI/ML专业证书 (DeepLearning.AI)</span>
+            <span class="cluster-item">Roblox开发者认证 (Roblox)</span>
+            <span class="cluster-item">UI/UX设计 (Google)</span>
+            <span class="cluster-item">视频剪辑大师 (Adobe)</span>
+            <span class="cluster-item">专业摄影 (NYIP)</span>
+            <span class="cluster-item">Google数据分析</span>
+            <span class="cluster-item">项目管理PMP</span>
+            <span class="cluster-item">专业烹饪 (Le Cordon Bleu)</span>
+            <span class="cluster-item">健身教练认证 (ACE)</span>
+            <span class="cluster-item">瑜伽导师认证 (Yoga Alliance)</span>
+            <span class="cluster-item">音乐制作 (Berklee)</span>
+            <span class="cluster-item">围棋业余1段</span>
+            <span class="cluster-item">救生员认证</span>
+            <span class="cluster-item">登山领队证</span>
+            <span class="cluster-item">潜水员OW (PADI)</span>
+            <span class="cluster-item">电竞选手认证</span>
+            <span class="cluster-item">Valorant职业选手</span>
+            <span class="cluster-item">王者荣耀职业选手</span>
+            <span class="cluster-item">英雄联盟职业选手</span>
+            <span class="cluster-item">炉石传说职业选手</span>
+            <span class="cluster-item">咖啡师认证 (SCA)</span>
+            <span class="cluster-item">调酒师认证 (IBA)</span>
+            <span class="cluster-item">心理咨询基础 (Coursera)</span>
+            <span class="cluster-item">营养学基础 (Stanford)</span>
+            <span class="cluster-item">中药学基础 (中医总会)</span>
+            <span class="cluster-item">推拿按摩认证</span>
+            <span class="cluster-item">商业管理证书</span>
+            <span class="cluster-item">哲学导论 (Oxford)</span>
+            <span class="cluster-item">经济学基础 (LSE)</span>
+            <span class="cluster-item">社会学概论 (Coursera)</span>
+            <span class="cluster-item">历史学基础 (Harvard)</span>
+            <span class="cluster-item">政治学导论 (Yale)</span>
+            <span class="cluster-item">人类学基础 (Stanford)</span>
           </div>
         </div>
       </div>
 
-      <!-- 职业选手专区 -->
+      <!-- 职业选手 -->
       <div class="foldable-universe">
         <div class="fold-trigger" onclick="toggleFold('proFold')">
-          <i class="fas fa-crown"></i>
-          <span>🏆 职业选手 · 15+项电竞 · 点击展开</span>
-          <i class="fas fa-chevron-down"></i>
+          <i class="fas fa-crown"></i><span>🏆 职业选手 · 15+项</span><i class="fas fa-chevron-down"></i>
         </div>
         <div id="proFold" class="fold-content">
-          <div class="pro-card" style="margin:0 0 10px 0; padding:12px;">
-            <i class="fas fa-crown"></i>
-            <div class="pro-info">
-              <h4>王者荣耀 职业选手</h4>
-              <p>战队: MY Pandas · 段位: 荣耀王者(100星)</p>
-            </div>
+          <div class="tag-cluster">
+            <span class="cluster-item">王者荣耀: MY Pandas · 打野/射手 · 荣耀王者(100星) · 巅峰2200分</span>
+            <span class="cluster-item">英雄联盟: MY Pandas · ADC/中路 · 钻石1 · 英雄池40+</span>
+            <span class="cluster-item">传说对决: MY Pandas · 凯撒路 · 星耀S</span>
+            <span class="cluster-item">DOTA2: MY Pandas · 核心位 · 传奇</span>
+            <span class="cluster-item">风暴英雄: MY Pandas · 斗士 · 大师</span>
+            <span class="cluster-item">平安京: MY Pandas · 射手 · 大属</span>
+            <span class="cluster-item">Valorant: MY Pandas · 决斗者 · 钻石2 · 爆头率28%</span>
+            <span class="cluster-item">CS2: MY Pandas · 完美B+ · Rating1.2</span>
+            <span class="cluster-item">APEX: MY Pandas · 恶灵 · 白金 · KD1.8</span>
+            <span class="cluster-item">守望先锋: MY Pandas · 源氏/天使 · 钻石</span>
+            <span class="cluster-item">炉石传说: MY Pandas · 传说前500 · 冬季赛8强</span>
+            <span class="cluster-item">FIFA: MY Pandas · 马来西亚前100</span>
+            <span class="cluster-item">围棋: 业余1段 · 全国赛16强</span>
+            <span class="cluster-item">灵约: 创始人 · 万灵XVI+ · 81英雄精通</span>
           </div>
-          <div class="pro-card" style="margin:0 0 10px 0; padding:12px;">
-            <i class="fas fa-dragon"></i>
-            <div class="pro-info">
-              <h4>灵约 职业选手/创始人</h4>
-              <p>段位: 万灵XVI+ · 81英雄精通</p>
-            </div>
+        </div>
+      </div>
+
+      <!-- 性格特质 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('personalityFold')">
+          <i class="fas fa-smile"></i><span>🧠 性格特质 · 30+维度</span><i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="personalityFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">MBTI: INFJ (提倡者) · 全球1% · 理想主義/洞察力/創造力</span>
+            <span class="cluster-item">九型人格: 4w5 (浪漫主义者) · 獨特/內省/敏感/藝術氣質</span>
+            <span class="cluster-item">大五人格: 開放性95% · 盡責性82% · 外向性65% · 親和性78% · 神經質45%</span>
+            <span class="cluster-item">16PF: 情感豐富/敏感細膩/想像力豐富/獨立自主</span>
+            <span class="cluster-item">DISC: I型 (影響型) · 熱情/樂觀/善於交際/激勵他人</span>
+            <span class="cluster-item">核心价值观: 真誠/創造/成長/自由/愛/智慧/和諧/勇氣/正義/慈悲</span>
+            <span class="cluster-item">優點: 創意/同理心/學習力/洞察力/適應力/耐心/細心/責任感</span>
+            <span class="cluster-item">缺點: 完美主義/過度思考/敏感/容易疲憊/選擇困難/拖延症</span>
+            <span class="cluster-item">愛情觀: 靈魂伴侶/深度連接/忠誠/浪漫/互相成長/精神共鳴</span>
+            <span class="cluster-item">社交風格: 傾聽者/引導者/深度連接/小圈子/真誠/支持者</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 兴趣爱好 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('hobbyFold')">
+          <i class="fas fa-heart"></i><span>❤️ 兴趣爱好 · 50+項</span><i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="hobbyFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">📚 读书: 科幻/心理/哲学/传记/历史/小说</span>
+            <span class="cluster-item">🎵 音乐: 周杰伦/泰勒/BTS/陈奕迅/林俊杰/告五人</span>
+            <span class="cluster-item">🎬 电影: 诺兰/宫崎骏/悬疑/动画/文艺/科幻</span>
+            <span class="cluster-item">📷 摄影: 街拍/人像/风光/微距/胶片</span>
+            <span class="cluster-item">✈️ 旅行: 去过8个国家/22个城市</span>
+            <span class="cluster-item">🐼 收藏: 熊猫周边/盲盒/手办</span>
+            <span class="cluster-item">🎮 桌游: 狼人杀/剧本杀/阿瓦隆/三国杀</span>
+            <span class="cluster-item">☕ 咖啡: 手冲/拉花/冷萃/咖啡烘焙</span>
+            <span class="cluster-item">🍵 茶道: 功夫茶/抹茶/奶茶/水果茶</span>
+            <span class="cluster-item">🧩 拼图/乐高: 1000片+/5000片完成</span>
+            <span class="cluster-item">🌱 种植: 薄荷/罗勒/迷迭香/小番茄</span>
+            <span class="cluster-item">📝 写日记: 12年/手账18本</span>
+            <span class="cluster-item">🎨 画画: 涂鸦/曼陀罗/禅绕画</span>
+            <span class="cluster-item">🧶 手工: 编织/羊毛毡/皮具</span>
+            <span class="cluster-item">🔮 占星/塔罗: 摩羯座/上升白羊</span>
+            <span class="cluster-item">🧘 冥想: 每日20分钟/累计1200天</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 宠物 -->
+      <div class="foldable-universe">
+        <div class="fold-trigger" onclick="toggleFold('petFold')">
+          <i class="fas fa-paw"></i><span>🐾 宠物 · 家人</span><i class="fas fa-chevron-down"></i>
+        </div>
+        <div id="petFold" class="fold-content">
+          <div class="tag-cluster">
+            <span class="cluster-item">🐱 猫咪"熊猫": 3岁/7kg/黑白/男孩/已绝育</span>
+            <span class="cluster-item">🐶 养过金毛: 5年/叫"旺旺"</span>
+            <span class="cluster-item">🐟 养过金鱼/斗鱼/锦鲤</span>
+            <span class="cluster-item">🦜 想养鹦鹉: 玄凤/虎皮</span>
+            <span class="cluster-item">🐰 喜欢兔子: 安哥拉/垂耳</span>
           </div>
         </div>
       </div>
@@ -742,133 +621,196 @@
     <!-- ========== 右侧主宇宙：无限内容 ========== -->
     <div class="right-main">
       
-      <!-- 灵约项目 - 完整版展示 -->
+      <!-- 灵约 - 完整介绍 -->
       <div class="cosmic-section">
-        <div class="section-head">
-          <i class="fas fa-dragon"></i> ⚔️ 灵约 · 轻量化完全体 · 81英雄 · 创始人
-        </div>
-        
+        <div class="section-head"><i class="fas fa-dragon"></i> ⚔️ 灵约 · 轻量化完全体 · 81英雄 · 创始人</div>
         <div class="project-vessel">
           <div class="project-core">
             <i class="fas fa-crown" style="color: gold;"></i>
-            <a href="https://lingyue.edgeone.dev/" target="_blank">灵约 · 轻量化</a>
-            <span> | </span>
-            <a href="https://lingyue-lmodb1zjvy.edgeone.dev/" target="_blank">灵约 · 完全体</a>
-            <span style="font-size: 1rem; background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/制作人</span>
+            <a href="https://lingyue.edgeone.dev/" target="_blank">灵约·轻量化</a> | 
+            <a href="https://lingyue-lmodb1zjvy.edgeone.dev/" target="_blank">灵约·完全体</a>
+            <span style="background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/制作人</span>
           </div>
           <div class="project-desc">
-            动漫修仙5V5 MOBA · 全模块 · 轻量流畅 · 预约突破百万
-          </div>
-          <div class="project-stats">
-            <span><i class="fas fa-dragon"></i> 81英雄</span>
-            <span><i class="fas fa-crown"></i> 七阶皮肤</span>
-            <span><i class="fas fa-paw"></i> 36灵宠</span>
-            <span><i class="fas fa-horse"></i> 72坐骑</span>
-            <span><i class="fas fa-gem"></i> 108符文</span>
-            <span><i class="fas fa-sword"></i> 72铭文</span>
-            <span><i class="fas fa-chess-queen"></i> 十大神器</span>
-            <span><i class="fas fa-exchange-alt"></i> 九系转职</span>
-          </div>
-          <div class="project-desc" style="margin-top: 12px;">
-            <i class="fas fa-tasks"></i> 四大原力: 业火(真伤) · 寒霜(减速) · 雷鸣(攻速) · 灵木(回复)<br>
-            核心英雄: 苍岚/云梦/灵漪/重明/幽螭/玄泽/祸斗/毕方/月镰/白泽/瑶姬/霸下<br>
-            灵宠(36天罡): 烛龙/灵狐/玄龟/冥鸦/月猫/祸斗<br>
-            坐骑(72地煞): 应龙/天马/祥云/青鸾/鲲鹏/穷奇<br>
-            十大神器: 轩辕剑/盘古斧/炼妖壶/东皇钟/昆仑镜/昊天塔<br>
-            转职九系: 剑仙/法尊/战圣/灵师/影刺/御者<br>
-            社交系统: 结婚·情缘(道侣/双修/情缘技) · 师徒(拜师/收徒/师徒技) · 宗门战/灵脉争夺<br>
-            家园洞府: 灵田/丹房/器室/闭关<br>
-            渡劫六境: 金丹→元婴→化神→渡劫→大乘→飞升(飞升奖励: 仙器/仙宠/仙羽/仙号)<br>
-            抽签系统: 天命池(七阶皮肤2%/70抽保底) · 觉醒池(神器3%/50抽保底) · 无量池(万灵皮肤1.5%/90抽保底)<br>
-            赛事/直播/录像/排行榜系统 · 周边商城(手办/服装/设定集/灵宠公仔)
-          </div>
-        </div>
-      </div>
-
-      <!-- 语言能力专区 -->
-      <div class="cosmic-section">
-        <div class="section-head">
-          <i class="fas fa-language"></i> 🌐 语言能力 · 25+种
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
-          <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-check-circle"></i> 母语级 (3种)</div>
-            <ul class="dimension-list"><li>华语 · 粤语 · 客家话</li></ul>
-          </div>
-          <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-star"></i> 流利级 (5种)</div>
-            <ul class="dimension-list"><li>英语 · 马来语 · 日语 · 韩语 · 闽南语</li></ul>
-          </div>
-          <div class="med-dimension">
-            <div class="dimension-title"><i class="fas fa-leaf"></i> 日常级 (17+种)</div>
-            <ul class="dimension-list"><li>西/法/德/意/俄/泰/越/葡/荷/瑞典/希腊/土/印地/阿拉伯/印尼/潮州/海南</li></ul>
+            <b>动漫修仙5V5 MOBA · 全模块 · 轻量流畅 · 预约突破百万</b><br>
+            🌟 四大原力: 业火(真伤·灼烧) · 寒霜(冷却·减速) · 雷鸣(攻速·连锁) · 灵木(回复·双抗)<br>
+            🌟 英雄81位: 苍岚/云梦/灵漪/重明/幽螭/玄泽/祸斗/毕方/月镰/白泽/瑶姬/霸下 +69位觉醒英雄<br>
+            🌟 七阶皮肤: 初灵(默认) → 通灵(稀有/特效增强) → 业火(史诗/粒子) → 寒霜(传说/冰冻) → 雷鸣(神话/雷电) → 灵木(至尊/生机) → 万灵(七阶/全屏特效/飞升回城)<br>
+            🌟 灵宠36天罡: 烛龙/灵狐/玄龟/冥鸦/月猫/祸斗/金鹏/鲲/幽蛛/腾蛇 (独立技能/羁绊进化)<br>
+            🌟 坐骑72地煞: 应龙/天马/祥云/青鸾/鲲鹏/穷奇/金翅大鹏/谛听/麒麟/白泽 (骑战/加速/技能)<br>
+            🌟 符文108种: 业火/寒霜/雷鸣/灵木/太阴/太阳/贪狼/巨门/禄存/文曲/廉贞/武曲 (自由搭配/套装效果)<br>
+            🌟 铭文72种: 破军/不动/通灵/长生/迅雷/踏云/破甲/不屈/龙威/羽化 (五色铭文/自由搭配)<br>
+            🌟 十大神器: 轩辕剑/盘古斧/炼妖壶/东皇钟/昆仑镜/昊天塔/伏羲琴/神农鼎/崆峒印/女娲石 (专属技能/神器觉醒)<br>
+            🌟 转职九系: 剑仙(爆发) · 法尊(控制) · 战圣(坦克) · 灵师(辅助) · 影刺(刺客) · 御者(召唤) · 巫祝(诅咒) · 机关(陷阱) · 龙将(变身)<br>
+            🌟 结婚情缘: 道侣/双修/情缘技/夫妻副本/结婚礼堂/结婚纪念日/情侣皮肤<br>
+            🌟 师徒系统: 拜师/收徒/师徒技/出师/师门任务/师徒副本/师门商店<br>
+            🌟 宗门战: 百宗大战/灵脉争夺/宗门商店/宗门技能/宗门BOSS/宗门联赛/宗门领地<br>
+            🌟 家园洞府: 灵田(种植仙草) · 丹房(炼制丹药) · 器室(打造装备) · 闭关(修炼突破) · 灵兽园(培养灵宠) · 仙草园(收集材料)<br>
+            🌟 成就系统: 战斗成就(击杀/胜场) · 收集成就(英雄/皮肤) · 社交成就(好友/师徒) · 隐藏成就(彩蛋) · 称号/勋章/头像框<br>
+            🌟 排行榜: 巅峰榜(段位) · 英雄榜(战力) · 宗门榜(活跃) · 财富榜(金币) · 战力榜(综合) · 皮肤榜(收集)<br>
+            🌟 录像系统: 回放/精彩时刻/大神观战/战术分析/一键分享/多视角<br>
+            🌟 直播系统: 官方直播/大神直播/赛事直播/教学直播/弹幕互动/礼物系统<br>
+            🌟 灵魂十段: 淬灵Ⅰ-Ⅲ → 锻魂Ⅳ-Ⅵ → 通幽Ⅶ-Ⅸ → 羽化Ⅹ-Ⅻ → 登神XIII-XV → 万灵XVI+ (段位奖励/赛季结算)<br>
+            🌟 渡劫六境: 金丹→元婴→化神→渡劫→大乘→飞升 (渡劫任务/天劫挑战/飞升奖励)<br>
+            🌟 飞升奖励: 仙器(神器升级) · 仙宠(灵宠进化) · 仙羽(翅膀皮肤) · 仙号(专属称号) · 仙府(洞府升级)<br>
+            🌟 战令系统: 初灵战令(基础) · 觉醒战令(进阶) · 赛季战令(限定皮肤/灵宠/神器)<br>
+            🌟 无量灵签: 天命池(七阶皮肤2%/70保底) · 觉醒池(神器3%/50保底) · 无量池(万灵皮肤1.5%/90保底) · 保底继承/灵魄兑换/限时UP<br>
+            🌟 周边商城: 手办/服装/设定集/灵宠公仔/宗门令/仙器模型/原画集/OST专辑<br>
+            🌟 赛事体系: 巅峰赛(个人) · 灵魂联赛(战队) · 全球总决赛(国家) · 冠军皮肤/冠军称号/冠军奖金<br>
+            🌟 全平台互通: iOS/Android/PC/macOS/Linux/Steam/Epic<br>
+            🌟 预约奖励: 「轻量化」头像框 · 七阶皮肤体验卡 · 神兽坐骑蛋 · 灵宠蛋 · 神器碎片<br>
           </div>
         </div>
       </div>
 
-      <!-- 职业选手专区 -->
+      <!-- 医学全科 - 16大科系完整 -->
       <div class="cosmic-section">
-        <div class="section-head">
-          <i class="fas fa-crown"></i> 🏆 职业选手 · 电竞生涯
-        </div>
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
-          <div class="pro-card" style="margin:0;">
-            <i class="fas fa-crown" style="color: gold;"></i>
-            <div class="pro-info">
-              <h3>王者荣耀 职业选手</h3>
-              <p>战队: MY Pandas · 段位: 荣耀王者(100星) · 巅峰赛: 2200分</p>
-            </div>
-          </div>
-          <div class="pro-card" style="margin:0;">
-            <i class="fas fa-dragon"></i>
-            <div class="pro-info">
-              <h3>灵约 职业选手/创始人</h3>
-              <p>段位: 万灵XVI+ · 81英雄精通 · 全皮肤收集</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 医学全科 -->
-      <div class="cosmic-section">
-        <div class="section-head">
-          <i class="fas fa-stethoscope"></i> 医学全科 · 16大科系
-        </div>
+        <div class="section-head"><i class="fas fa-stethoscope"></i> 医学全科 · 16大科系 · 完整列表</div>
         <div class="med-hypergrid">
           <div class="med-dimension">
-            <div class="dimension-title">内科学</div>
-            <ul class="dimension-list"><li>心脏病学 · 呼吸病学 · 消化病学 · 肾脏病学 · 内分泌学 · 血液学 · 风湿免疫学 · 感染病学</li></ul>
+            <div class="dimension-title">🫀 内科学 (8項)</div>
+            <ul class="dimension-list">
+              <li>心脏病学 · 心血管内科</li><li>呼吸病学 · 呼吸与危重症</li><li>消化病学 · 胃肠肝胆</li><li>肾脏病学 · 泌尿内科</li><li>内分泌学 · 糖尿病/甲状腺</li><li>血液学 · 白血病/贫血</li><li>风湿免疫学 · 关节炎</li><li>感染病学 · 传染病/热带病</li>
+            </ul>
           </div>
           <div class="med-dimension">
-            <div class="dimension-title">外科学</div>
-            <ul class="dimension-list"><li>普通外科 · 神经外科 · 心胸外科 · 骨科 · 整形外科 · 泌尿外科 · 小儿外科 · 血管外科</li></ul>
+            <div class="dimension-title">🔪 外科学 (8項)</div>
+            <ul class="dimension-list">
+              <li>普通外科 · 胃肠/肝胆</li><li>神经外科 · 脑肿瘤/创伤</li><li>心胸外科 · 心脏/肺部手术</li><li>骨科 · 骨折/关节置换</li><li>整形外科 · 美容/重建</li><li>泌尿外科 · 肾脏/膀胱</li><li>小儿外科 · 儿童手术</li><li>血管外科 · 动脉/静脉</li>
+            </ul>
           </div>
           <div class="med-dimension">
-            <div class="dimension-title">专科医学</div>
-            <ul class="dimension-list"><li>妇产科 · 儿科 · 神经科 · 眼科 · 耳鼻喉科 · 皮肤科 · 精神科 · 肿瘤科</li></ul>
+            <div class="dimension-title">👁️ 专科医学 (8項)</div>
+            <ul class="dimension-list">
+              <li>妇产科学 · 妇科/产科</li><li>儿科学 · 新生儿/儿童</li><li>神经病学 · 中风/癫痫</li><li>眼科学 · 白内障/近视</li><li>耳鼻喉科学 · 耳鼻喉</li><li>皮肤病学 · 湿疹/痤疮</li><li>精神医学 · 抑郁/焦虑</li><li>肿瘤学 · 癌症/化疗</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🌿 传统与辅助 (7項)</div>
+            <ul class="dimension-list">
+              <li>中医学 · 针灸/中药</li><li>马来传统医学 · 草药</li><li>印度阿育吠陀 · 自然疗法</li><li>自然疗法 · 营养/生活方式</li><li>物理治疗 · 康复训练</li><li>职业治疗 · 日常生活</li><li>言语治疗 · 语言障碍</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🦷 牙医学 (7項)</div>
+            <ul class="dimension-list">
+              <li>口腔内科 · 蛀牙/牙周</li><li>口腔外科 · 拔牙/植牙</li><li>正畸学 · 牙齿矫正</li><li>儿童牙科 · 儿童牙齿</li><li>牙周病学 · 牙龈疾病</li><li>修复学 · 假牙/牙冠</li><li>口腔放射学 · X光诊断</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">⚗️ 基础医学 (7項)</div>
+            <ul class="dimension-list">
+              <li>人体解剖学 · 结构</li><li>生理学 · 功能</li><li>病理学 · 疾病机制</li><li>药理学 · 药物作用</li><li>微生物学 · 细菌/病毒</li><li>免疫学 · 免疫系统</li><li>生物化学 · 分子机制</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- NovaServe 创业项目 -->
+      <div class="cosmic-section">
+        <div class="section-head"><i class="fas fa-rocket"></i> 创业项目 · NovaServe</div>
+        <div class="project-vessel">
+          <div class="project-core">
+            <i class="fas fa-crown" style="color: gold;"></i>
+            <a href="https://novaserve.edgeone.dev" target="_blank">novaserve.edgeone.dev</a>
+            <span style="background: rgba(255,170,0,0.2); padding: 6px 20px; border-radius: 40px;">创始人/CEO/CTO</span>
+          </div>
+          <div class="project-desc">
+            一站式开发者服务平台 · 2025年创立于马来西亚 · 愿景：让创作更简单<br>
+            📊 总交易额: RM 1030 · 用户: 47 (内测) · UI/UX设计 RM380 · 全栈开发 RM650 · 平台费 RM51.5<br>
+            🛠️ 功能: 首页/浏览/卖家/订单/仪表板/分析/团队/开发者空间/学习中心/社区/税务上报/帮助中心/API文档/合作伙伴/招聘
+          </div>
+        </div>
+      </div>
+
+      <!-- 创作者矩阵 -->
+      <div class="cosmic-section">
+        <div class="section-head"><i class="fas fa-video"></i> 创作者矩阵 · 全平台</div>
+        <div class="project-vessel">
+          <div class="project-core"><i class="fab fa-youtube" style="color:#ff4d4d;"></i> YouTube · 86.2万订阅</div>
+          <div class="project-desc">Roblox游戏实况 · 熊猫拟人短剧 · 中医科普 · 编程日常 · 总播放1.6亿+</div>
+        </div>
+        <div class="project-vessel">
+          <div class="project-core"><i class="fab fa-tiktok" style="color:#69c9ff;"></i> TikTok · 120万粉丝</div>
+          <div class="project-desc">熊猫变装 · 特效模仿秀 · 挑战赛2.8亿播放 · 蓝V认证 · #熊猫团团挑战赛</div>
+        </div>
+        <div class="project-vessel">
+          <div class="project-core"><i class="fab fa-instagram" style="color:#d62976;"></i> Instagram · 42.5万粉丝</div>
+          <div class="project-desc">生活美学 · 熊猫日常 · 中医小知识 · 烹饪日常 · 心理学分享</div>
+        </div>
+        <div class="project-vessel">
+          <div class="project-core"><i class="fab fa-discord" style="color:#5865F2;"></i> 灵约 · 神ノ殿堂 · 9位成员</div>
+          <div class="project-desc">游戏/医学/编程/中医/心理学/烹饪交流 · 灵魂之约 · 欢迎加入</div>
+        </div>
+      </div>
+
+      <!-- 游戏宇宙 - 完整 -->
+      <div class="cosmic-section">
+        <div class="section-head"><i class="fas fa-gamepad"></i> 游戏宇宙 · 500+款</div>
+        <div class="game-cosmos">
+          <div class="med-dimension">
+            <div class="dimension-title">🎮 MOBA专区 (25+款)</div>
+            <ul class="dimension-list">
+              <li>灵约 · 万灵XVI+ · 创始人 · 81英雄</li><li>王者荣耀 · 荣耀王者(100星)</li><li>英雄联盟 · 钻石1</li><li>传说对决 · 星耀S</li><li>DOTA2 · 传奇</li><li>风暴英雄 · 大师</li><li>平安京 · 大属</li><li>梦三国 · 大神</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🔫 FPS/射击 (30+款)</div>
+            <ul class="dimension-list">
+              <li>Valorant · 钻石2</li><li>CS2 · 完美B+</li><li>APEX · 白金</li><li>守望先锋 · 钻石</li><li>COD · 老兵通关</li><li>PUBG · 吃鸡率15%</li><li>彩虹六号 · 黄金</li><li>堡垒之夜 · 钻石</li>
+            </ul>
+          </div>
+          <div class="med-dimension">
+            <div class="dimension-title">🎲 休闲/创造 (40+款)</div>
+            <ul class="dimension-list">
+              <li>Roblox · 开发者/50萬玩家</li><li>Minecraft · 建築/紅石</li><li>星露谷 · 全成就</li><li>动物森友会 · 五星岛</li><li>马里奥系列 · 全收集</li><li>双人成行 · 全成就</li><li>胡闹厨房 · 全三星</li><li>舞力全开 · 全五星</li>
+            </ul>
           </div>
         </div>
       </div>
 
       <!-- 技能无限云 -->
       <div class="cosmic-section">
-        <div class="section-head">
-          <i class="fas fa-cubes"></i> 无限技能云
-        </div>
+        <div class="section-head"><i class="fas fa-cubes"></i> 无限技能云 · 200+技能</div>
         <div class="skill-nebula">
-          <span class="skill-atom"><i class="fas fa-dragon"></i> 游戏策划</span>
-          <span class="skill-atom"><i class="fas fa-code"></i> 全栈开发</span>
-          <span class="skill-atom"><i class="fas fa-leaf"></i> 中医针灸</span>
-          <span class="skill-atom"><i class="fas fa-brain"></i> 心理学</span>
-          <span class="skill-atom"><i class="fas fa-utensils"></i> 烹饪</span>
-          <span class="skill-atom"><i class="fas fa-crown"></i> 电竞选手</span>
+          <span class="skill-atom">遊戲策劃</span><span class="skill-atom">全棧開發</span><span class="skill-atom">中醫針灸</span><span class="skill-atom">心理學</span>
+          <span class="skill-atom">烹飪</span><span class="skill-atom">電競選手</span><span class="skill-atom">視頻剪輯</span><span class="skill-atom">攝影後期</span>
+          <span class="skill-atom">UI/UX設計</span><span class="skill-atom">音樂製作</span><span class="skill-atom">遊戲開發</span><span class="skill-atom">社群運營</span>
+          <span class="skill-atom">項目管理</span><span class="skill-atom">數據分析</span><span class="skill-atom">急救CPR</span><span class="skill-atom">健身瑜伽</span>
         </div>
       </div>
 
-      <!-- 页脚 - 更新Gmail -->
+      <!-- 高光成就 -->
+      <div class="cosmic-section">
+        <div class="section-head"><i class="fas fa-medal"></i> 高光成就 · 50+項</div>
+        <div class="skill-nebula">
+          <span class="skill-atom">2024新銳YouTuber</span><span class="skill-atom">TikTok藍V認證</span><span class="skill-atom">中醫AI創新獎</span>
+          <span class="skill-atom">針灸專項認證</span><span class="skill-atom">全網350萬粉絲</span><span class="skill-atom">總播放5.2億</span>
+          <span class="skill-atom">GitHub 680+星</span><span class="skill-atom">熊貓公益大使</span><span class="skill-atom">烹飪比賽銀獎</span>
+          <span class="skill-atom">攝影展入圍</span><span class="skill-atom">校園歌手十佳</span><span class="skill-atom">登山登頂</span>
+          <span class="skill-atom">王者榮耀榮耀王者</span><span class="skill-atom">英雄聯盟鑽石</span><span class="skill-atom">Valorant鑽石</span>
+          <span class="skill-atom">爐石傳說8強</span><span class="skill-atom">Roblox開發者認證</span><span class="skill-atom">志願者300小時</span>
+        </div>
+      </div>
+
+      <!-- 夢想清單 -->
+      <div class="cosmic-section">
+        <div class="section-head"><i class="fas fa-star"></i> 夢想清單</div>
+        <div class="skill-nebula">
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color:#28a745;"></i> 100萬粉絲✅</span>
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color:#28a745;"></i> 針灸認證✅</span>
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color:#28a745;"></i> NovaServe上線✅</span>
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color:#28a745;"></i> 職業選手✅</span>
+          <span class="skill-atom"><i class="fas fa-check-circle" style="color:#28a745;"></i> 榮耀王者✅</span>
+          <span class="skill-atom">靈約正式上線</span><span class="skill-atom">出書《熊貓的斜杠人生》</span><span class="skill-atom">開熊貓主題餐廳</span>
+          <span class="skill-atom">去冰島看極光</span><span class="skill-atom">跑馬拉松</span><span class="skill-atom">學法語</span><span class="skill-atom">養柴犬</span>
+        </div>
+      </div>
+
+      <!-- 頁腳 -->
       <div class="space-footer">
-        <i class="fas fa-bolt"></i> 医学全科 · 编程 · 中医 · 心理学 · 烹饪 · 游戏 · 职业选手 · 80+文凭 · 25+语言 · 广东客家 · 灵约创始人(双版本) · 81英雄 · 马来西亚团团熊猫 · 第25版 <i class="fas fa-bolt"></i><br>
-        📩 Gmail: tuantuanxiongmaoyouxizhubo@gmail.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig | 🎮 灵约: lingyue.edgeone.dev
+        <i class="fas fa-bolt"></i> 醫學全科·編程·中醫·心理學·烹飪·遊戲·職業選手·80+文憑·25+語言·廣東客家·靈約創始人(雙版本)·81英雄·5V5 MOBA·性別未知·馬來西亞團團熊貓·第26版·全宇宙最完整版 <i class="fas fa-bolt"></i><br>
+        📩 Gmail: tuantuanxiongmaoyouxizhubo@gmail.com | 📞 WhatsApp: 01156649657 | 💬 微信: a12tianbig | 🎮 靈約: lingyue.edgeone.dev | 💬 Discord: discord.gg/7MfrQj5mJN
       </div>
     </div>
   </div>
